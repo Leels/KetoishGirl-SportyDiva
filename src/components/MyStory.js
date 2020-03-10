@@ -3,8 +3,8 @@ import React from "react";
 function MyStory(){
 
   return (
-    <div>
-    <h1>MyStory Page</h1>
+    <div class="container pageHeight">
+    <h1>My Story</h1>
     </div>
   );
 }

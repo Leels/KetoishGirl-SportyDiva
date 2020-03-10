@@ -3,8 +3,8 @@ import React from "react";
 function Resources(){
 
   return (
-    <div>
-    <h1>Resources Page</h1>
+    <div class="container pageHeight">
+    <h1>Resources</h1>
     </div>
   );
 }

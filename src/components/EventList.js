@@ -48,12 +48,12 @@ class EventList extends Component {
 
 
     return (
-      <div style={pageHeight} class="container">
+      <div class="container pageHeight">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 align="center" class="panel-title">
+            <h1 align="center" class="panel-title">
               Sporty Diva Run/Walk Events
-            </h3>
+            </h1>
           </div>
           <br/>
           <SportyDivaCarousel />

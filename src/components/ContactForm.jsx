@@ -6,16 +6,13 @@ import firebase from '../Firebase';
 
 function ContactForm(){
 
-  const pageHeight = {
-    paddingTop: "30px",
-    paddingBottom: "250px"
-  }
+
 
   return (
-    <div style={pageHeight} class="container">
+    <div class="container pageHeight">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 align="center" class="panel-title">
+          <h3 class="panel-title">
             Contact Ketoish Girl
           </h3>
         </div>

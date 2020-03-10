@@ -60,13 +60,8 @@ class CreateEvent extends Component {
   render() {
     const { name, date, mission, course, schedule, timing, address, restrooms } = this.state;
 
-    const pageHeight = {
-      paddingTop: "30px",
-      paddingBottom: "250px"
-    }
-
     return (
-      <div style={pageHeight} class="container">
+      <div class="container pageHeight">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 align="center" class="panel-title">

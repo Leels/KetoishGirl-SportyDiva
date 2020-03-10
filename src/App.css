@@ -1,6 +1,12 @@
-.container {
-  min-height: 100vh;
+.pageHeight {
+  min-height: 90vh;
+  padding-top: 30px;
+  padding-bottom: 10px;
   overflow: hidden;
  display: block;
  position: relative;
+}
+
+h1 {
+  text-align: center;
 }

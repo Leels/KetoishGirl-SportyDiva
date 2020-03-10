@@ -13,6 +13,7 @@ import EditEvent from './components/EditEvent';
 import CreateEvent from './components/CreateEvent';
 import ShowEvent from './components/ShowEvent';
 import ContactForm from './components/ContactForm';
+import "./App.css"
 
 function App(){
     return (

@@ -43,7 +43,7 @@ class ShowEvent extends Component {
     }
 
     return (
-      <div style={pageHeight} class="container">
+      <div class="container pageHeight">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 align="center" class="panel-title">
