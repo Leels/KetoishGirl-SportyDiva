@@ -16,9 +16,13 @@ toggleCollapse = () => {
 
 render() {
   const logoStyles = {
-    fontFamily: "Libre Franklin",
+    fontFamily: "Comfortaa",
     color: "#b2ebf2",
     fontSize: "150%",
+  }
+
+  const icon = {
+    paddingLeft: "8px"
   }
 
   const navFont = {
@@ -53,29 +57,9 @@ render() {
             <MDBNavLink to="/ScheduleAppointment">Schedule an Appointment</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-            <MDBNavLink to="/Contact">Contact</MDBNavLink>
-            </MDBNavItem>
-          </MDBNavbarNav>
-          <MDBNavbarNav right>
-            <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="https://www.facebook.com/ketoishgirl">
-                <MDBIcon fab icon="facebook" />
-              </MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="https://www.instagram.com/ketoishgirl/?hl=en">
-                <MDBIcon fab icon="instagram" />
-              </MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBDropdown>
-                <MDBDropdownToggle nav caret>
-                  <MDBIcon icon="envelope" />
-                </MDBDropdownToggle>
-                <MDBDropdownMenu className="dropdown-default">
-                  <MDBDropdownItem href="#!">Email Rose</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
+            <MDBNavLink to="/Contact">Contact
+            <MDBIcon style={icon} icon="envelope" />
+            </MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>

@@ -15,7 +15,7 @@ const positioning = {
         <MDBRow>
           <MDBCol md="12" className="py-5">
             <div className="mb-5 flex-center">
-              <a className="fb-ic">
+              <a href="https://www.facebook.com/ketoishgirl" className="fb-ic">
                 <i className="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">
                 </i>
               </a>
@@ -23,15 +23,15 @@ const positioning = {
                 <i className="fab fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x">
                 </i>
               </a>
-              <a className="li-ic">
+              <a href="https://www.linkedin.com/in/rose-coates-243621191/?trk=people-guest_profile-result-card_result-card_full-click" className="li-ic">
                 <i className="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x">
                 </i>
               </a>
-              <a className="ins-ic">
+              <a href="https://www.instagram.com/ketoishgirl/?hl=en" className="ins-ic">
                 <i className="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x">
                 </i>
               </a>
-              <a >
+              <a href="./#/Contact">
                 <i className="fa fa-envelope white-text mr-md-5 mr-3 fa-2x" />
               </a>
             </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import firebase from './../Firebase';
 import './EventList.css'
 import SportyDivaCarousel from './SportyDivaCarousel';
+import RunLocations from './RunLocations';
 
 class EventList extends Component {
   constructor(props) {
@@ -65,6 +66,7 @@ class EventList extends Component {
           <br/>
           <p class="quote"><em>"If you run, you are a runner. It doesn't matter how fast or how far. It doesn't matter if today is your first day or if you've been running for twenty years. There is no test to pass, no license to earn, no membership card to get. You just run."</em> - John Bingham</p>
           <br/>
+          <RunLocations />
           <div class="panel-body">
             <table class="table table-stripe">
               <thead>

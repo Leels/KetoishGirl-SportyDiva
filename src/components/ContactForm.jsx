@@ -74,7 +74,7 @@ class ContactForm extends Component {
               <label for="message">Your Message*</label>
               <textArea class="form-control" name="message" placeholder="Your message ..." cols="80" rows="3" onChange={this.onChange}></textArea>
             </div>
-            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="submit" class="btn btn-success">Send</button>
           </form>
         </div>
       </div>
