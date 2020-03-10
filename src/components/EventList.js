@@ -45,7 +45,10 @@ class EventList extends Component {
     const pageHeight = {
       paddingTop: "30px",
     }
+    const underline = {
+      fontWeight: "bold",
 
+    }
 
     return (
       <div class="container pageHeight">
@@ -58,7 +61,7 @@ class EventList extends Component {
           <br/>
           <SportyDivaCarousel />
           <br/>
-          <p><strong>Sporty Diva Run/Walk Events </strong>are designed to encourage, motivate and inspire the first time athlete or those returning to fitness in a fun, friendly and supportive~non~competitive race environment with a philanthropic/pay it forward mission.</p>
+          <p><strong>Sporty Diva Run/Walk Events </strong>are designed to encourage, motivate and inspire the first time athlete or those returning to fitness in a fun, friendly and supportive noncompetitive race environment with a philanthropic/pay it forward mission.</p>
           <br/>
           <p class="quote"><em>"If you run, you are a runner. It doesn't matter how fast or how far. It doesn't matter if today is your first day or if you've been running for twenty years. There is no test to pass, no license to earn, no membership card to get. You just run."</em> - John Bingham</p>
           <br/>
@@ -74,7 +77,7 @@ class EventList extends Component {
               <tbody>
                 {this.state.events.map(event =>
                   <tr>
-                    <td><Link to={`/showevent/${event.key}`}>{event.name}</Link></td>
+                    <td><Link to={`/showevent/${event.key}`} style={underline}>{event.name}</Link></td>
                     <td>{event.date}</td>
                     <td>{event.address}</td>
                   </tr>
