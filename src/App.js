@@ -30,8 +30,8 @@ function App(){
       <Route exact path='/mystory' component={MyStory} />
       <Route exact path='/resources' component={Resources} />
       <Route exact path='/scheduleappointment' component={ScheduleAppointment} />
+      <Route exact path='/contact' component={ContactForm} />
       </Switch>
-      <ContactForm />
       <Footer />
       </div>
     );

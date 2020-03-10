@@ -7,6 +7,7 @@ import firebase from '../Firebase';
 function ContactForm(){
 
   const pageHeight = {
+    paddingTop: "30px",
     paddingBottom: "250px"
   }
 
@@ -14,7 +15,7 @@ function ContactForm(){
     <div style={pageHeight} class="container">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">
+          <h3 align="center" class="panel-title">
             Contact Ketoish Girl
           </h3>
         </div>
@@ -29,8 +30,8 @@ function ContactForm(){
               <input type="text" class="form-control" name="email" placeholder="example@example.com" />
             </div>
             <div class="form-group">
-              <label for="phone">Phone:</label>
-              <input type="text" class="form-control" name="phone" placeholder="253-123-4567" />
+              <label for="subject">Subject:</label>
+              <input type="text" class="form-control" name="subject" placeholder="Subject" />
             </div>
             <div class="form-group">
               <label for="message">Your Message:</label>

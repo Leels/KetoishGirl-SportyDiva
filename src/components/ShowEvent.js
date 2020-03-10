@@ -37,12 +37,16 @@ class ShowEvent extends Component {
   }
 
   render() {
+    const pageHeight = {
+      paddingTop: "30px",
+      paddingBottom: "250px"
+    }
+
     return (
-      <div class="container">
+      <div style={pageHeight} class="container">
         <div class="panel panel-default">
           <div class="panel-heading">
-          <h4><Link to="/">Event List</Link></h4>
-            <h3 class="panel-title">
+            <h3 align="center" class="panel-title">
               {this.state.event.name}
             </h3>
           </div>
@@ -65,6 +69,7 @@ class ShowEvent extends Component {
             </dl>
             <Link to={`/editevent/${this.state.key}`} class="btn btn-success">Edit</Link>&nbsp;
             <button onClick={this.delete.bind(this, this.state.key)} class="btn btn-danger">Delete</button>
+            <h4><Link to="/EventList">Back to Event List</Link></h4>
           </div>
         </div>
       </div>

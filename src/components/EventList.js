@@ -39,16 +39,22 @@ class EventList extends Component {
   }
 
   render() {
+
+    const pageHeight = {
+      paddingTop: "30px",
+      paddingBottom: "250px"
+    }
+
     return (
-      <div class="container">
+      <div style={pageHeight} class="container">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">
-              EVENT LIST
+            <h3 align="center" class="panel-title">
+              SportyDiva Runs
             </h3>
           </div>
           <div class="panel-body">
-            <h4><Link to="/createevent">Add Event</Link></h4>
+            <h4 align="center"><Link to="/createevent">+ Add Event</Link></h4>
             <table class="table table-stripe">
               <thead>
                 <tr>

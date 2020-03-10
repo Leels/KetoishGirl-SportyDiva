@@ -79,16 +79,21 @@ class EditEvent extends Component {
   }
 
   render() {
+
+    const pageHeight = {
+      paddingTop: "30px",
+      paddingBottom: "250px"
+    }
+
     return (
-      <div class="container">
+      <div style={pageHeight} class="container">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">
+            <h3 align="center" class="panel-title">
               EDIT EVENT
             </h3>
           </div>
           <div class="panel-body">
-            <h4><Link to={`/show/${this.state.key}`} class="btn btn-primary">Event List</Link></h4>
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
                 <label for="name">Sporty Diva Run:</label>
@@ -123,6 +128,7 @@ class EditEvent extends Component {
                 <input type="text" class="form-control" name="restrooms" value={this.state.restrooms} onChange={this.onChange} placeholder="Restrooms" />
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
+              <h4><Link to="/EventList" class="btn btn-primary">Back to Event List</Link></h4>
             </form>
           </div>
         </div>

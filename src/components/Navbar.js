@@ -24,11 +24,15 @@ render() {
   const navFont = {
     color: "#ebfafa"
   }
+
+  const ish = {
+    fontSize: "80%"
+  }
   return (
     <HashRouter>
       <MDBNavbar color="unique-color-dark" dark expand="md">
         <MDBNavbarBrand>
-          <strong style={logoStyles}>Keto<em>ish</em> Girl</strong>
+          <strong style={logoStyles}>Keto<em style={ish}>ish</em> Girl</strong>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
@@ -50,6 +54,9 @@ render() {
             </MDBNavItem>
             <MDBNavItem>
             <MDBNavLink to="/ScheduleAppointment">Schedule an Appointment</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+            <MDBNavLink to="/Contact">Contact</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
