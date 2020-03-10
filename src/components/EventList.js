@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import firebase from './../Firebase';
+import './EventList.css'
+import SportyDivaCarousel from './SportyDivaCarousel';
 
 class EventList extends Component {
   constructor(props) {
@@ -42,23 +44,29 @@ class EventList extends Component {
 
     const pageHeight = {
       paddingTop: "30px",
-      paddingBottom: "250px"
     }
+
 
     return (
       <div style={pageHeight} class="container">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 align="center" class="panel-title">
-              SportyDiva Runs
+              Sporty Diva Run/Walk Events
             </h3>
           </div>
+          <br/>
+          <SportyDivaCarousel />
+          <br/>
+          <p><strong>Sporty Diva Run/Walk Events </strong>are designed to encourage, motivate and inspire the first time athlete or those returning to fitness in a fun, friendly and supportive~non~competitive race environment with a philanthropic/pay it forward mission.</p>
+          <br/>
+          <p class="quote"><em>"If you run, you are a runner. It doesn't matter how fast or how far. It doesn't matter if today is your first day or if you've been running for twenty years. There is no test to pass, no license to earn, no membership card to get. You just run."</em> - John Bingham</p>
+          <br/>
           <div class="panel-body">
-            <h4 align="center"><Link to="/createevent">+ Add Event</Link></h4>
             <table class="table table-stripe">
               <thead>
                 <tr>
-                  <th>Sporty Diva Run</th>
+                  <th>Event</th>
                   <th>Date</th>
                   <th>Location</th>
                 </tr>
@@ -73,6 +81,7 @@ class EventList extends Component {
                 )}
               </tbody>
             </table>
+                <h4 align="center"><Link to="/createevent">+ Add Event</Link></h4>
           </div>
         </div>
       </div>

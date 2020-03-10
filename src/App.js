@@ -14,8 +14,6 @@ import CreateEvent from './components/CreateEvent';
 import ShowEvent from './components/ShowEvent';
 import ContactForm from './components/ContactForm';
 
-
-
 function App(){
     return (
       <div>

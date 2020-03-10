@@ -50,6 +50,7 @@ class ShowEvent extends Component {
               {this.state.event.name}
             </h3>
           </div>
+          <br/>
           <div class="panel-body">
             <dl>
             <dt>Date</dt>

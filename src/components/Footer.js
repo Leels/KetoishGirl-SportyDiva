@@ -4,7 +4,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 const Footer = () => {
 
 const positioning = {
-  position: "fixed",
+  position: "relative",
   left: "0",
   right: "0",
   bottom: "0"

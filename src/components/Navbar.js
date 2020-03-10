@@ -50,7 +50,7 @@ render() {
               <MDBNavLink to="/Resources">Resources</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-            <MDBNavLink to="/EventList">SportyDiva Runs</MDBNavLink>
+            <MDBNavLink to="/EventList">Sporty Diva Events</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
             <MDBNavLink to="/ScheduleAppointment">Schedule an Appointment</MDBNavLink>
