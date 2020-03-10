@@ -10,7 +10,7 @@ const positioning = {
   bottom: "0"
 }
   return (
-    <MDBFooter style={positioning} color="cyan" className="font-small darken-3 pt-0">
+    <MDBFooter style={positioning} color="unique-color-dark" className="font-small darken-3 pt-0">
       <MDBContainer>
         <MDBRow>
           <MDBCol md="12" className="py-5">

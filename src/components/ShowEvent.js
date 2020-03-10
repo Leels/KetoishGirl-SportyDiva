@@ -41,6 +41,10 @@ class ShowEvent extends Component {
       paddingTop: "30px",
       paddingBottom: "250px"
     }
+    const back = {
+      paddingTop: "12px",
+      textAlign: "center"
+    }
 
     return (
       <div class="container pageHeight">
@@ -70,7 +74,7 @@ class ShowEvent extends Component {
             </dl>
             <Link to={`/editevent/${this.state.key}`} class="btn btn-success">Edit</Link>&nbsp;
             <button onClick={this.delete.bind(this, this.state.key)} class="btn btn-danger">Delete</button>
-            <h4><Link to="/EventList">Back to Event List</Link></h4>
+            <h4 style={back}><Link to="/EventList">Back to Event List</Link></h4>
           </div>
         </div>
       </div>

@@ -17,12 +17,12 @@ toggleCollapse = () => {
 render() {
   const logoStyles = {
     fontFamily: "Libre Franklin",
-    color: "#adebeb",
+    color: "#b2ebf2",
     fontSize: "150%",
   }
 
   const navFont = {
-    color: "#ebfafa"
+    color: "#e0f7fa"
   }
 
   const ish = {
@@ -32,14 +32,11 @@ render() {
     <HashRouter>
       <MDBNavbar color="unique-color-dark" dark expand="md">
         <MDBNavbarBrand>
-          <strong style={logoStyles}>Keto<em style={ish}>ish</em> Girl</strong>
+          <MDBNavLink to="/" style={logoStyles}>Ketoish Girl</MDBNavLink>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-          <MDBNavbarNav left>
-            <MDBNavItem>
-              <MDBNavLink to="/">Home</MDBNavLink>
-            </MDBNavItem>
+          <MDBNavbarNav center>
             <MDBNavItem>
             <MDBNavLink to="/MyStory">My Story</MDBNavLink>
             </MDBNavItem>
