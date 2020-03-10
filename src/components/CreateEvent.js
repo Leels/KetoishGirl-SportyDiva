@@ -64,9 +64,9 @@ class CreateEvent extends Component {
       <div class="container pageHeight">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 align="center" class="panel-title">
+            <h1 class="panel-title">
               ADD EVENT
-            </h3>
+            </h1>
           </div>
           <div class="panel-body">
             <form onSubmit={this.onSubmit}>

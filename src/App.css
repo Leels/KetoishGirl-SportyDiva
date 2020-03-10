@@ -9,4 +9,9 @@
 
 h1 {
   text-align: center;
+  padding-top: 5px;
+}
+
+body {
+  color: #1C2331;
 }

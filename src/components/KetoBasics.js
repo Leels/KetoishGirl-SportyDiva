@@ -6,7 +6,7 @@ function KetoBasics(){
 
   return (
     <div class="container pageHeight">
-    <h1 align="center">Keto Basics</h1>
+    <h1 align="center">KETO BASICS</h1>
     </div>
   );
 }

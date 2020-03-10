@@ -45,12 +45,17 @@ class ContactForm extends Component {
   render() {
     const { name, email, subject, message } = this.state;
 
+    const logoStyles = {
+      // fontFamily: "Comfortaa",
+      // color: "#80deea"
+    }
+
     return (
     <div class="container pageHeight">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h1 class="panel-title">
-            Contact Ketoish Girl
+            CONTACT <span style={logoStyles}>KETOISH GIRL</span>
           </h1>
         </div>
         <br/>

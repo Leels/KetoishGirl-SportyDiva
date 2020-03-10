@@ -27,7 +27,7 @@ const SportyDivaCarousel = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Bristol_Half_Marathon.jpg/1200px-Bristol_Half_Marathon.jpg"
+                src="./HalfMarathon.png"
                 alt="Second slide"
               />
             </MDBView>

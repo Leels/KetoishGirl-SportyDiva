@@ -4,7 +4,7 @@ function ScheduleAppointment(){
 
   return (
     <div class="container pageHeight">
-    <h1>Schedule an Appointment</h1>
+    <h1>SCHEDULE AN APPOINTMENT</h1>
     </div>
   );
 }

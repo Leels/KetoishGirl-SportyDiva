@@ -6,7 +6,7 @@ function LandingPage(){
 
   return (
     <div class="container pageHeight">
-      <h1>LandingPage</h1>
+      <h1>LANDING PAGE</h1>
     </div>
   );
 }
