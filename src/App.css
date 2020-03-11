@@ -10,8 +10,13 @@
 h1 {
   text-align: center;
   padding-top: 5px;
+  font-size: 400%;
 }
 
 body {
   color: #1C2331;
+}
+
+h2 {
+  font-size: 300%;
 }

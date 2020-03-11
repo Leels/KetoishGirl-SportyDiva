@@ -38,7 +38,7 @@ class RunLocations extends Component {
             </div>
           </MDBCol>
       </MDBRow>
-      <p>All <strong>Sporty Diva Run/Walk Events</strong> are located throughout the beautiful Puget Sound. You can run towards Mt.Rainier on the Orting Foothills Trail, breathe in the salty fresh sea air at Chambers Bay or follow the ducks around Greenlake Park. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>All <strong>Sporty Diva Run/Walk Events</strong> are located throughout the beautiful Puget Sound. You can run towards Mt.Rainier on the Orting Foothills Trail, breathe in the salty fresh sea air at Chambers Bay or follow the ducks around Seattle's Greenlake Park. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </MDBContainer>
     );
   }

@@ -46,32 +46,58 @@ class ShowEvent extends Component {
       textAlign: "center"
     }
 
+    const colorLime = {
+      backgroundColor: "#F0F4C3",
+      paddingLeft: "10px",
+      fontSize: "120%"
+    }
+
+    const colorGrey = {
+      backgroundColor: "#eceff1",
+      paddingLeft: "10px",
+      fontSize: "120%"
+    }
+
     return (
       <div class="container pageHeight">
         <div class="panel panel-default">
           <div class="panel-heading">
           <h1>SPORTY DIVA EVENT</h1>
-            <h3 style={back} class="panel-title">
+            <h2 style={back} class="panel-title">
               {this.state.event.name}
-            </h3>
+            </h2>
           </div>
           <br/>
           <div class="panel-body">
             <dl>
+            <div style={colorLime}>
             <dt>Date</dt>
             <dd>{this.state.event.date}</dd>
+            </div>
+            <div style={colorGrey}>
               <dt>Pay it Forward Mission</dt>
               <dd>{this.state.event.mission}</dd>
+              </div>
+              <div style={colorLime}>
               <dt>Course Description</dt>
               <dd>{this.state.event.course}</dd>
+              </div>
+              <div style={colorGrey}>
               <dt>Event Day Schedule</dt>
               <dd>{this.state.event.schedule}</dd>
+              </div>
+              <div style={colorLime}>
               <dt>Timing</dt>
               <dd>{this.state.event.timing}</dd>
+              </div>
+              <div style={colorGrey}>
               <dt>Location</dt>
               <dd>{this.state.event.address}</dd>
+              </div>
+              <div style={colorLime}>
               <dt>Restrooms</dt>
               <dd>{this.state.event.restrooms}</dd>
+              </div>
             </dl>
             <Link to={`/editevent/${this.state.key}`} class="btn btn-success">Edit</Link>&nbsp;
             <button onClick={this.delete.bind(this, this.state.key)} class="btn btn-danger">Delete</button>

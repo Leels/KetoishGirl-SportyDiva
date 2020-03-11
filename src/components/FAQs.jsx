@@ -164,7 +164,7 @@ function FAQs(){
     <h3>Will we have any fun at the event?</h3>
     </div>
     <div class="flip-card-back back-blue card align-items-center justify-content-center">
-    <p>Fun is the utmost priority at all Sporty Diva events! We will have a blast!</p>
+    <p>Fun is our utmost priority at all Sporty Diva events! We will have a blast!</p>
     </div>
   </div>
   </div>
