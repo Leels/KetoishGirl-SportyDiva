@@ -74,10 +74,10 @@ class EventList extends Component {
           <br/>
           <RunLocations />
           <br/>
-          <h2 style={subTitle} class="panel-title ">
+          <h2 style={subTitle} class="panel-title title">
             EVENT LIST
           </h2>
-          <div class="panel-body ">
+          <div class="panel-body title">
             <table class="table table-stripe">
               <thead>
                 <tr>

@@ -33,7 +33,7 @@
 
 .front-lime {
   display: flex;
-  background-color: #9e9d24 ;
+  background-color: #afb42b ;
   color: white;
   padding: 8px;
 }
@@ -52,7 +52,7 @@
 
 /* Style the back side */
 .back-grey {
-  background-color:#1C2331;
+  background-color:#455a64;
   transform: rotateY(180deg);
   padding: 8px;
   color: white;
@@ -67,8 +67,8 @@
 
 /* Style the back side */
 .back-blue {
-  background-color: #006064;
+  background-color: #b2ebf2;
   transform: rotateY(180deg);
   padding: 8px;
-  color: white;
+
 }
