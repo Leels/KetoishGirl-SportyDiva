@@ -23,7 +23,7 @@ function FAQs(){
       <div class="flip-card card">
       <div class="flip-card-inner">
         <div class="flip-card-front front-lime card align-items-center justify-content-center">
-        <h3>Where can I register?</h3>
+        <h3>Where can I register for an event?</h3>
         </div>
         <div class="flip-card-back back-lime card align-items-center justify-content-center">
         <p>Registration is available online only at SportyDiva.com or RunSignUp.com. Day of race registration is not available.</p>
@@ -140,7 +140,7 @@ function FAQs(){
   <h3>What about food?</h3>
   </div>
   <div class="flip-card-back back-lime card align-items-center justify-content-center">
-  <p>Snacks like trail mix, red vines, chips, cookies, candy, soda, water and juice will be available at the start/finish line. However, if you have any specific or special fuel and hydration requirements, please bring these items with you to ensure that you have a good race.</p>
+  <p>Snacks like trail mix, red vines, chips, cookies, candy, soda, water and juice will be available at the start/finish line. If you have any specific fuel or hydration requirements please bring these items with you to ensure that you have a good race.</p>
   </div>
 </div>
 </div>

@@ -35,40 +35,40 @@
   display: flex;
   background-color: #afb42b ;
   color: white;
-  padding: 8px;
+  padding: 10px;
 }
 
 .back-lime {
-  background-color: #dce775;
+  background-color: #e6ee9c;
   transform: rotateY(180deg);
-  padding: 8px;
+  padding: 10px;
 }
 
 .front-grey {
   display: flex;
   background-color: #cfd8dc;
-  padding:8px;
+  padding:10px;
 }
 
 /* Style the back side */
 .back-grey {
   background-color:#455a64;
   transform: rotateY(180deg);
-  padding: 8px;
+  padding: 10px;
   color: white;
 }
 
 .front-blue {
   display: flex;
   background-color: #0097a7;
-  padding:8px;
+  padding:10px;
   color: white;
 }
 
 /* Style the back side */
 .back-blue {
-  background-color: #b2ebf2;
+  background-color: #e0f7fa;
   transform: rotateY(180deg);
-  padding: 8px;
+  padding: 10px;
 
 }
