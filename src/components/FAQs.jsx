@@ -17,7 +17,7 @@ function FAQs(){
   }
   return (
     <MDBContainer class="container pageHeight">
-    <h2 style={subTitle} align="center">SPORTY DIVA FAQS</h2>
+    <h2 style={subTitle} align="center">SPORTY DIVA EVENT FAQS</h2>
       <MDBRow align="center">
       <MDBCol lg="4" md="12" className="mb-3">
       <div class="flip-card card">
