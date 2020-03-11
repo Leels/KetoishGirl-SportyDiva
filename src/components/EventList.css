@@ -1,8 +1,8 @@
 .quote {
-  background: rgba(0, 188, 212, 0.2);
-  -moz-box-shadow: 0 0 0 10px rgba(0, 188, 212, 0.2);
-  -webkit-box-shadow: 0 0 0 10px rgba(0, 188, 212, 0.2);
-  box-shadow: 0 0 0 10px rgba(0, 188, 212, 0.2);
+  background: #e0f7fa;
+  -moz-box-shadow: 0 0 0 10px #e0f7fa;
+  -webkit-box-shadow: 0 0 0 10px #e0f7fa;
+  box-shadow: 0 0 0 10px #e0f7fa;
 }
 
 .title {

@@ -25,10 +25,6 @@ render() {
     paddingLeft: "8px"
   }
 
-  const navFont = {
-    color: "#e0f7fa"
-  }
-
   const ish = {
     fontSize: "80%"
   }
