@@ -4,7 +4,7 @@ function MyStory(){
 
   return (
     <div class="container pageHeight">
-    <h1>MY STORY</h1>
+    <h1>My Story</h1>
     </div>
   );
 }

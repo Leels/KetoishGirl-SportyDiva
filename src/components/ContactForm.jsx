@@ -46,8 +46,8 @@ class ContactForm extends Component {
     const { name, email, subject, message } = this.state;
 
     const logoStyles = {
-      // fontFamily: "Comfortaa",
-      // color: "#80deea"
+      fontFamily: "Comfortaa",
+      color: "#80deea"
     }
 
     return (
@@ -55,7 +55,7 @@ class ContactForm extends Component {
       <div class="panel panel-default">
         <div class="panel-heading">
           <h1 class="panel-title">
-            CONTACT <span style={logoStyles}>KETOISH GIRL</span>
+            Contact <span style={logoStyles}>KETOISH GIRL</span>
           </h1>
         </div>
         <br/>

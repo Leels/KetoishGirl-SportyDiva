@@ -20,7 +20,7 @@ class RunLocations extends Component {
     }
     return (
       <MDBContainer>
-      <h2 style={subTitle}>WHERE WE RUN</h2>
+      <h2 style={subTitle}>Where We Run</h2>
         <MDBRow>
         <MDBCol lg="4" md="12" className="mb-3">
         <div class="card">

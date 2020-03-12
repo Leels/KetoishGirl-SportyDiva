@@ -65,7 +65,7 @@ class CreateEvent extends Component {
         <div class="panel panel-default">
           <div class="panel-heading">
             <h1 class="panel-title">
-              ADD EVENT
+              Add Event
             </h1>
           </div>
           <div class="panel-body">

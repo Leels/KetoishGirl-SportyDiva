@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Switch, Route } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import KetoBasics from './components/KetoBasics';
@@ -13,7 +12,6 @@ import EditEvent from './components/EditEvent';
 import CreateEvent from './components/CreateEvent';
 import ShowEvent from './components/ShowEvent';
 import ContactForm from './components/ContactForm';
-import AdminLogin from './components/AdminLogin';
 import "./App.css"
 
 function App(){
@@ -31,7 +29,6 @@ function App(){
       <Route exact path='/resources' component={Resources} />
       <Route exact path='/scheduleappointment' component={ScheduleAppointment} />
       <Route exact path='/contact' component={ContactForm} />
-      <Route exact path='/adminlogin' component={AdminLogin} />
       </Switch>
       <Footer />
       </div>

@@ -62,7 +62,7 @@ class ShowEvent extends Component {
       <div class="container pageHeight">
         <div class="panel panel-default">
           <div class="panel-heading">
-          <h1>SPORTY DIVA EVENT</h1>
+          <h1>Sporty Diva</h1>
             <h2 style={back} class="panel-title">
               {this.state.event.name}
             </h2>

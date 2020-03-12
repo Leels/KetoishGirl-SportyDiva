@@ -61,7 +61,7 @@ class EventList extends Component {
         <div class="panel panel-default">
           <div class="panel-heading">
             <h1 class="panel-title">
-              SPORTY DIVA EVENTS
+              Sporty Diva Events
             </h1>
           </div>
           <br/>
@@ -75,7 +75,7 @@ class EventList extends Component {
           <RunLocations />
           <br/>
           <h2 style={subTitle} class="panel-title title">
-            EVENT LIST
+            Event List
           </h2>
           <div class="panel-body title">
             <table class="table table-stripe">

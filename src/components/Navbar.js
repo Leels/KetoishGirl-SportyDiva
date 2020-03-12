@@ -38,22 +38,22 @@ render() {
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav center>
             <MDBNavItem>
-            <MDBNavLink to="/MyStory">MY STORY</MDBNavLink>
+            <MDBNavLink to="/MyStory">My Story</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/KetoBasics">KETO BASICS</MDBNavLink>
+              <MDBNavLink to="/KetoBasics">Keto Basics</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/Resources">RESOURCES</MDBNavLink>
+              <MDBNavLink to="/Resources">Resources</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-            <MDBNavLink to="/EventList">SPORTY DIVA EVENTS</MDBNavLink>
+            <MDBNavLink to="/EventList">Sporty Diva Events</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-            <MDBNavLink to="/ScheduleAppointment">SCHEDULE AN APPOINTMENT</MDBNavLink>
+            <MDBNavLink to="/ScheduleAppointment">Schedule an Appointment</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-            <MDBNavLink to="/Contact">CONTACT
+            <MDBNavLink to="/Contact">Contact
             <MDBIcon style={icon} icon="envelope" />
             </MDBNavLink>
             </MDBNavItem>
