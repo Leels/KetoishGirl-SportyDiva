@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
@@ -12,13 +12,26 @@ import EditEvent from './components/EditEvent';
 import CreateEvent from './components/CreateEvent';
 import ShowEvent from './components/ShowEvent';
 import ContactForm from './components/ContactForm';
+import AdminLogin from './components/AdminLogin';
+import AdminSignup from './components/AdminSignup';
 import "./App.css"
+import { AuthProvider, AuthContext} from './Auth';
+import PrivateRoute from './components/PrivateRoute';
+import {
+  BrowserRouter as Router,
+} from 'react-router-dom';
 
-function App(){
+
+class App extends Component {
+  render() {
     return (
       <div>
+      <AuthProvider>
       <Navbar />
       <Switch>
+      <PrivateRoute exact path='/' component={LandingPage} />
+      <Route exact path='/adminlogin' component={AdminLogin} />
+      <Route exact path='/adminsignup' component={AdminSignup} />
       <Route exact path='/' component={LandingPage} />
       <Route path='/eventlist' component={EventList} />
       <Route path='/editevent/:id' component={EditEvent} />
@@ -31,8 +44,10 @@ function App(){
       <Route exact path='/contact' component={ContactForm} />
       </Switch>
       <Footer />
+      </AuthProvider>
       </div>
     );
   }
+}
 
 export default App;

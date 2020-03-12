@@ -12,16 +12,15 @@ const config = {
   storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
 };
-firebase.initializeApp(config);
+
+const app = firebase.initializeApp(config);
 
 const storage = firebase.storage();
 
 const database = firebase.database();
 
-const provider = new firebase.auth.GoogleAuthProvider();
-
 const auth = firebase.auth();
 
 export {
-   database, storage, provider, auth, firebase as default
+   database, storage, auth, app, firebase as default
  }
