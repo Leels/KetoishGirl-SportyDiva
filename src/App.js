@@ -26,12 +26,12 @@ class App extends Component {
       <AuthProvider>
       <Router>
       <Navbar />
-      <PrivateRoute exact path='/' component={LandingPage} />
+      <Route exact path='/' component={LandingPage} />
       <Route path='/adminlogin' component={AdminLogin} />
       <Route path='/adminsignup' component={AdminSignup} />
       <Route path='/eventlist' component={EventList} />
       <Route path='/editevent/:id' component={EditEvent} />
-      <Route path='/createevent' component={CreateEvent} />
+      <PrivateRoute path='/createevent' component={CreateEvent} />
       <Route path='/showevent/:id' component={ShowEvent} />
       <Route exact path='/ketobasics' component={KetoBasics} />
       <Route exact path='/mystory' component={MyStory} />
