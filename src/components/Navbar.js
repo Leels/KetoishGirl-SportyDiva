@@ -2,8 +2,8 @@
 import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
 MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
-import { HashRouter } from 'react-router-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import {Link} from 'react-router-dom'
+
 
 class Navbar extends Component {
 state = {
@@ -29,7 +29,6 @@ render() {
     fontSize: "80%"
   }
   return (
-    <HashRouter>
       <MDBNavbar color="unique-color-dark" dark expand="md">
         <MDBNavbarBrand>
           <MDBNavLink to="/" style={logoStyles}>KETOISH GIRL</MDBNavLink>
@@ -60,7 +59,6 @@ render() {
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
-    </HashRouter>
     );
   }
 }

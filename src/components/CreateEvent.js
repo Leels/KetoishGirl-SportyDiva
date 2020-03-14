@@ -61,49 +61,49 @@ class CreateEvent extends Component {
     const { name, date, mission, course, schedule, timing, address, restrooms } = this.state;
 
     return (
-      <div class="container pageHeight">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h1 class="panel-title">
+      <div className="container pageHeight">
+        <div className="panel panel-default">
+          <div className="panel-heading">
+            <h1 className="panel-title">
               Add Event
             </h1>
           </div>
-          <div class="panel-body">
+          <div className="panel-body">
             <form onSubmit={this.onSubmit}>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="name">Event:</label>
-                <input type="text" class="form-control" name="name" value={name} onChange={this.onChange} placeholder="Event Name" />
+                <input type="text" className="form-control" name="name" value={name} onChange={this.onChange} placeholder="Event Name" />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="date">Date:</label>
-                <input type="text" class="form-control" name="date" value={date} onChange={this.onChange} placeholder="Date" />
+                <input type="text" className="form-control" name="date" value={date} onChange={this.onChange} placeholder="Date" />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="address">Location:</label>
-                <textArea class="form-control" name="address" onChange={this.onChange} placeholder="Event Address" cols="80" rows="3">{address}</textArea>
+                <textArea className="form-control" name="address" onChange={this.onChange} placeholder="Event Address" cols="80" rows="3">{address}</textArea>
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="mission">Pay it Forward Mission:</label>
-                <input type="text" class="form-control" name="mission" value={mission} onChange={this.onChange} placeholder="Pay it Forward Mission" />
+                <input type="text" className="form-control" name="mission" value={mission} onChange={this.onChange} placeholder="Pay it Forward Mission" />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="description">Course Description:</label>
-                <textArea class="form-control" name="course" onChange={this.onChange} placeholder="Course Description" cols="80" rows="3">{course}</textArea>
+                <textArea className="form-control" name="course" onChange={this.onChange} placeholder="Course Description" cols="80" rows="3">{course}</textArea>
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="schedule">Event Day Schedule:</label>
-                <textArea class="form-control" name="schedule" onChange={this.onChange} placeholder="Event Day Schedule" cols="80" rows="3">{schedule}</textArea>
+                <textArea className="form-control" name="schedule" onChange={this.onChange} placeholder="Event Day Schedule" cols="80" rows="3">{schedule}</textArea>
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="timing">Timing and Other Information:</label>
-                <textArea class="form-control" name="timing" onChange={this.onChange} placeholder="Timing Information" cols="80" rows="3">{timing}</textArea>
+                <textArea className="form-control" name="timing" onChange={this.onChange} placeholder="Timing Information" cols="80" rows="3">{timing}</textArea>
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="restrooms">Restrooms:</label>
-                <textArea class="form-control" name="restrooms" onChange={this.onChange} placeholder="Restrooms" cols="80" rows="3">{restrooms}</textArea>
+                <textArea className="form-control" name="restrooms" onChange={this.onChange} placeholder="Restrooms" cols="80" rows="3">{restrooms}</textArea>
               </div>
-              <button type="submit" class="btn btn-success">Submit</button>
-              <h4><Link to="/EventList" class="btn btn-primary">Back to Event List</Link></h4>
+              <button type="submit" className="btn btn-success">Submit</button>
+              <h4><Link to="/EventList" className="btn btn-primary">Back to Event List</Link></h4>
             </form>
           </div>
         </div>

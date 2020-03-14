@@ -47,39 +47,40 @@ class ContactForm extends Component {
 
     const logoStyles = {
       fontFamily: "Comfortaa",
-      color: "#80deea"
+      color: "#80deea",
+      fontSize: "90%"
     }
 
     return (
-    <div class="container pageHeight">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h1 class="panel-title">
+    <div className="container pageHeight">
+      <div className="panel panel-default">
+        <div className="panel-heading">
+          <h1 className="panel-title">
             Contact <span style={logoStyles}>KETOISH GIRL</span>
           </h1>
         </div>
         <br/>
         <h5 align="center">Got a question? I'd love to hear from you! Send me a message and I'll respond as soon as possible.</h5>
         <br/>
-        <div class="panel-body">
+        <div className="panel-body">
           <form onSubmit={this.onSubmit}>
-            <div class="form-group">
+            <div className="form-group">
               <label for="name">Name*</label>
-              <input type="text" class="form-control" name="name" placeholder="First and Last Name" value={name} onChange={this.onChange}/>
+              <input type="text" className="form-control" name="name" placeholder="First and Last Name" value={name} onChange={this.onChange}/>
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <label for="email">Email*</label>
-              <input type="text" class="form-control" name="email" placeholder="example@example.com" value={email} onChange={this.onChange}/>
+              <input type="text" className="form-control" name="email" placeholder="example@example.com" value={email} onChange={this.onChange}/>
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <label for="subject">Subject</label>
-              <input type="text" class="form-control" name="subject" placeholder="Subject" value={subject} onChange={this.onChange}/>
+              <input type="text" className="form-control" name="subject" placeholder="Subject" value={subject} onChange={this.onChange}/>
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <label for="message">Your Message*</label>
-              <textArea class="form-control" name="message" placeholder="Your message ..." cols="80" rows="3" onChange={this.onChange}></textArea>
+              <textArea className="form-control" name="message" placeholder="Your message ..." cols="80" rows="3" onChange={this.onChange}></textArea>
             </div>
-            <button type="submit" class="btn btn-success">Send</button>
+            <button type="submit" className="btn btn-success">Send</button>
           </form>
         </div>
       </div>

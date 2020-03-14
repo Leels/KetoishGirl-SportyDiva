@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { Link, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import KetoBasics from './components/KetoBasics';
@@ -15,11 +14,9 @@ import ContactForm from './components/ContactForm';
 import AdminLogin from './components/AdminLogin';
 import AdminSignup from './components/AdminSignup';
 import "./App.css"
-import { AuthProvider, AuthContext} from './Auth';
+import AuthProvider from './Auth';
 import PrivateRoute from './components/PrivateRoute';
-import {
-  BrowserRouter as Router,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
 class App extends Component {
@@ -27,11 +24,11 @@ class App extends Component {
     return (
       <div>
       <AuthProvider>
+      <Router>
       <Navbar />
-      <Switch>
       <PrivateRoute exact path='/' component={LandingPage} />
-      <Route exact path='/adminlogin' component={AdminLogin} />
-      <Route exact path='/adminsignup' component={AdminSignup} />
+      <Route path='/adminlogin' component={AdminLogin} />
+      <Route path='/adminsignup' component={AdminSignup} />
       <Route exact path='/' component={LandingPage} />
       <Route path='/eventlist' component={EventList} />
       <Route path='/editevent/:id' component={EditEvent} />
@@ -42,7 +39,7 @@ class App extends Component {
       <Route exact path='/resources' component={Resources} />
       <Route exact path='/scheduleappointment' component={ScheduleAppointment} />
       <Route exact path='/contact' component={ContactForm} />
-      </Switch>
+      </Router>
       <Footer />
       </AuthProvider>
       </div>

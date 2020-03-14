@@ -1,9 +1,10 @@
 import React, { useCallback, useContext } from "react";
 import { withRouter, Redirect } from "react-router";
 import app from "./../Firebase.js";
-import { AuthContext } from "./Auth.js";
+import {AuthContext}  from "./../Auth.js";
 
 const AdminLogin = ({ history }) => {
+  const { currentUser } = useContext(AuthContext);
   const handleLogin = useCallback(
     async event => {
       event.preventDefault();
@@ -20,28 +21,34 @@ const AdminLogin = ({ history }) => {
     [history]
   );
 
-  const { currentUser } = useContext(AuthContext);
-
   if (currentUser) {
     return <Redirect to="/" />;
   }
 
   return (
-    <div>
-      <h1>Log in</h1>
-      <form onSubmit={handleLogin}>
-        <label>
-          Email
-          <input name="email" type="email" placeholder="Email" />
-        </label>
-        <label>
-          Password
-          <input name="password" type="password" placeholder="Password" />
-        </label>
-        <button type="submit">Log in</button>
-      </form>
+    <div className="container pageHeight">
+      <div className="panel panel-default">
+        <div className="panel-heading">
+          <h1 className="panel-title">
+            Admin Login</h1>
+        </div>
+        <br/>
+        <div className="panel-body">
+          <form onSubmit={handleLogin}>
+            <div className="form-group">
+              <label for="email">Email</label>
+              <input type="text" className="form-control" name="email" placeholder="example@example.com"/>
+            </div>
+            <div className="form-group">
+              <label for="password">Password</label>
+              <input type="password" className="form-control" name="password" placeholder="********"/>
+            </div>
+            <button type="submit" className="btn btn-success">Login</button>
+          </form>
+        </div>
+      </div>
     </div>
   );
-};
+}
 
 export default withRouter(AdminLogin);
