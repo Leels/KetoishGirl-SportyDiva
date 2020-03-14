@@ -12,9 +12,9 @@ import CreateEvent from './components/CreateEvent';
 import ShowEvent from './components/ShowEvent';
 import ContactForm from './components/ContactForm';
 import AdminLogin from './components/AdminLogin';
-import AdminSignup from './components/AdminSignup';
 import "./App.css"
 import AuthProvider from './Auth';
+import AdminSignup from './components/AdminSignup';
 import PrivateRoute from './components/PrivateRoute';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -29,7 +29,6 @@ class App extends Component {
       <PrivateRoute exact path='/' component={LandingPage} />
       <Route path='/adminlogin' component={AdminLogin} />
       <Route path='/adminsignup' component={AdminSignup} />
-      <Route exact path='/' component={LandingPage} />
       <Route path='/eventlist' component={EventList} />
       <Route path='/editevent/:id' component={EditEvent} />
       <Route path='/createevent' component={CreateEvent} />

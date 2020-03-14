@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 import { withRouter } from "react-router";
 import app from "./../Firebase";
 
-const AdminSignUp = ({ history }) => {
+const AdminSignup = ({ history }) => {
   const handleSignUp = useCallback(async event => {
     event.preventDefault();
     const { email, password } = event.target.elements;
@@ -34,4 +34,4 @@ const AdminSignUp = ({ history }) => {
   );
 };
 
-export default withRouter(AdminSignUp);
+export default withRouter(AdminSignup);

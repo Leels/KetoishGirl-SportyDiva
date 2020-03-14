@@ -31,7 +31,7 @@ const positioning = {
                 <i className="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x">
                 </i>
               </a>
-              <a href="./#/Contact">
+              <a href="./Contact">
                 <i className="fa fa-envelope white-text mr-md-5 mr-3 fa-2x" />
               </a>
             </div>
@@ -40,7 +40,8 @@ const positioning = {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright:{" "}
+        <a href="./AdminLogin">Admin </a>
+          - &copy; {new Date().getFullYear()} Copyright:{" "}
           Lela Smith
         </MDBContainer>
       </div>
