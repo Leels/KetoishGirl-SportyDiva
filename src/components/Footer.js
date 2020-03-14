@@ -1,5 +1,7 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import LoginButton from './LoginButton';
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
 
@@ -39,9 +41,9 @@ const positioning = {
         </MDBRow>
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
+      <LoginButton/>
         <MDBContainer fluid>
-        <a href="./AdminLogin">Admin </a>
-          - &copy; {new Date().getFullYear()} Copyright:{" "}
+          &copy; {new Date().getFullYear()} Copyright:{" "}
           Lela Smith
         </MDBContainer>
       </div>

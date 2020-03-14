@@ -5,6 +5,7 @@ import './EventList.css'
 import SportyDivaCarousel from './SportyDivaCarousel';
 import RunLocations from './RunLocations';
 import FAQs from './FAQs';
+import AddEventAccess from './AddEventAccess';
 
 class EventList extends Component {
   constructor(props) {
@@ -96,7 +97,7 @@ class EventList extends Component {
                 )}
               </tbody>
             </table>
-                <h4 align="center"><Link to="/createevent">+ Add Event</Link></h4>
+            <AddEventAccess/>
           </div>
         </div>
         <FAQs/>

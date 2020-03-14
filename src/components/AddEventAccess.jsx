@@ -1,25 +1,25 @@
 import React, { useContext } from "react";
 import firebase, { app } from '../Firebase';
+import {Link} from 'react-router-dom';
 import { AuthContext } from "./../Auth";
 
 
 
-function LoginButton(){
+function AddEventAccess(){
 
   const {currentUser} = useContext(AuthContext);
 
   if (currentUser) {
   return  (
     <div>
-    <a onClick={() => app.auth().signOut()}>Sign Out</a>
+    <h4 align="center"><Link to="/createevent">+ Add Event</Link></h4>
     </div>
   );
   }
   return (
     <div >
-    <a href="./AdminLogin">Admin</a>
   </div>
   );
 }
 
-export default LoginButton;
+export default AddEventAccess;

@@ -10,7 +10,6 @@ function LandingPage(){
   return (
     <div className="container pageHeight">
       <h1>Landing Page</h1>
-      <LoginButton/>
     </div>
   );
 }
