@@ -14,7 +14,6 @@ import ContactForm from './components/ContactForm';
 import AdminLogin from './components/AdminLogin';
 import "./App.css"
 import AuthProvider from './Auth';
-import AdminSignup from './components/AdminSignup';
 import PrivateRoute from './components/PrivateRoute';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -28,7 +27,6 @@ class App extends Component {
       <Navbar />
       <Route exact path='/' component={LandingPage} />
       <Route path='/adminlogin' component={AdminLogin} />
-      <Route path='/adminsignup' component={AdminSignup} />
       <Route path='/eventlist' component={EventList} />
       <Route path='/editevent/:id' component={EditEvent} />
       <PrivateRoute path='/createevent' component={CreateEvent} />

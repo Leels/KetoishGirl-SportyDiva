@@ -20,7 +20,7 @@ class EventList extends Component {
   onCollectionUpdate = (querySnapshot) => {
     const events = [];
     querySnapshot.forEach((doc) => {
-      const { name, date, mission, course, schedule, timing, address, restrooms } = doc.data();
+      const { name, date, mission, course, schedule, timing, address, restrooms, registrationLink } = doc.data();
       events.push({
         key: doc.id,
         doc, // DocumentSnapshot
@@ -31,7 +31,8 @@ class EventList extends Component {
         schedule,
         timing,
         address,
-        restrooms
+        restrooms,
+        registrationLink
       });
     });
     this.setState({
@@ -68,8 +69,8 @@ class EventList extends Component {
           <br/>
           <SportyDivaCarousel />
           <br/>
-          <p><strong>Sporty Diva Run/Walk Events </strong>are designed to encourage, motivate and inspire the first time athlete or those returning to fitness in a fun, friendly and supportive noncompetitive race environment with a philanthropic/pay it forward mission.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p><strong>Sporty Diva Run/Walk Events </strong>are designed to encourage, motivate and inspire the first time athlete or those returning to fitness in a fun, friendly and supportive noncompetitive race environment with a philanthropic/pay it forward mission. All fitness levels are welcome to participate, we have no time limits for our races. This is your day!</p>
+          <p>Each participant will receive a Sporty Diva goodybag and a finisher's medal for each event. Snacks like trail mix, red vines, chips, cookies, candy, soda, water and juice will be available at the start/finish line. All participant's finishing times will be recorded and posted online three days after the event.</p>
           <br/>
           <p className="quote"><em>"If you run, you are a runner. It doesn't matter how fast or how far. It doesn't matter if today is your first day or if you've been running for twenty years. There is no test to pass, no license to earn, no membership card to get. You just run."</em> - John Bingham</p>
           <br/>

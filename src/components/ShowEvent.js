@@ -69,7 +69,7 @@ class ShowEvent extends Component {
           </div>
           <br/>
           <a href={this.state.event.registrationLink}>
-          <h4 align="center">Register here!</h4>
+          <h3 align="center">Register here!</h3>
           </a>
           <br/>
           <div class="panel-body">
