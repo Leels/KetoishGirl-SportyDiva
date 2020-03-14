@@ -18,8 +18,13 @@ class RunLocations extends Component {
       paddingBottom: "18px",
       paddingTop: "30px"
     }
+
+    const section = {
+      marginTop: "50px"
+    }
+
     return (
-      <MDBContainer>
+      <MDBContainer style={section}>
       <h2 style={subTitle}>Where We Run</h2>
         <MDBRow>
         <MDBCol lg="4" md="12" className="mb-3">

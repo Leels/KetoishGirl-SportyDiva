@@ -16,7 +16,8 @@ class CreateEvent extends Component {
       schedule: '',
       timing: '',
       address: '',
-      restrooms: ''
+      restrooms: '',
+      registrationLink: ''
     };
   }
   onChange = (e) => {
@@ -28,7 +29,7 @@ class CreateEvent extends Component {
   onSubmit = (e) => {
     e.preventDefault();
 
-    const { name, date, mission, course, schedule, timing, address, restrooms } = this.state;
+    const { name, date, mission, course, schedule, timing, address, restrooms, registrationLink } = this.state;
 
     this.ref.add({
       name,
@@ -38,7 +39,8 @@ class CreateEvent extends Component {
       schedule,
       timing,
       address,
-      restrooms
+      restrooms,
+      registrationLink
     }).then((docRef) => {
       this.setState({
         name: '',
@@ -48,7 +50,8 @@ class CreateEvent extends Component {
         schedule: '',
         timing: '',
         address: '',
-        restrooms: ''
+        restrooms: '',
+        registrationLink: ''
       });
       this.props.history.push("/")
     })
@@ -58,7 +61,7 @@ class CreateEvent extends Component {
   }
 
   render() {
-    const { name, date, mission, course, schedule, timing, address, restrooms } = this.state;
+    const { name, date, mission, course, schedule, timing, address, restrooms, registrationLink } = this.state;
 
     return (
       <div className="container pageHeight">
@@ -101,6 +104,10 @@ class CreateEvent extends Component {
               <div className="form-group">
                 <label for="restrooms">Restrooms:</label>
                 <textArea className="form-control" name="restrooms" onChange={this.onChange} placeholder="Restrooms" cols="80" rows="3">{restrooms}</textArea>
+              </div>
+              <div className="form-group">
+                <label for="registrationLink">Event Registration Link:</label>
+                <textArea className="form-control" name="registrationLink" onChange={this.onChange} placeholder="https://runsignup.com/" cols="80" rows="3">{registrationLink}</textArea>
               </div>
               <button type="submit" className="btn btn-success">Submit</button>
               <h4><Link to="/EventList" className="btn btn-primary">Back to Event List</Link></h4>

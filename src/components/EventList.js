@@ -45,16 +45,16 @@ class EventList extends Component {
 
   render() {
 
-    const pageHeight = {
-      paddingTop: "30px",
-    }
     const underline = {
       fontWeight: "bold"
     }
 
     const subTitle = {
       textAlign: "center",
-      paddingTop: "30px"
+      paddingTop: "20px"
+    }
+    const section = {
+      marginTop: "50px"
     }
 
     return (
@@ -75,7 +75,8 @@ class EventList extends Component {
           <br/>
           <RunLocations />
           <br/>
-          <h2 style={subTitle} className="panel-title title">
+          <div className="list">
+          <h2 style={subTitle} className="panel-title">
             Event List
           </h2>
           <div className="panel-body title">
@@ -98,6 +99,7 @@ class EventList extends Component {
               </tbody>
             </table>
             <AddEventAccess/>
+          </div>
           </div>
         </div>
         <FAQs/>

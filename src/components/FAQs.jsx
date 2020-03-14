@@ -13,11 +13,11 @@ function FAQs(){
   const subTitle = {
     textAlign: "center",
     paddingBottom: "30px",
-    paddingTop: "30px"
+    marginTop: "120px"
   }
   return (
     <MDBContainer class="container pageHeight">
-    <h2 style={subTitle} align="center">Sporty Diva Event FAQs</h2>
+    <h2 style={subTitle}>Sporty Diva Event FAQs</h2>
       <MDBRow align="center">
       <MDBCol lg="4" md="12" className="mb-3">
       <div class="flip-card card">
