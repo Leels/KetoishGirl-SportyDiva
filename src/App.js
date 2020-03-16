@@ -12,6 +12,7 @@ import CreateEvent from './components/CreateEvent';
 import ShowEvent from './components/ShowEvent';
 import ContactForm from './components/ContactForm';
 import AdminLogin from './components/AdminLogin';
+import PhotoUpload from './components/PhotoUpload';
 import "./App.css"
 import AuthProvider from './Auth';
 import PrivateRoute from './components/PrivateRoute';
@@ -36,6 +37,7 @@ class App extends Component {
       <Route exact path='/resources' component={Resources} />
       <Route exact path='/scheduleappointment' component={ScheduleAppointment} />
       <Route exact path='/contact' component={ContactForm} />
+      <Route exact path='/photoupload' component={PhotoUpload} />
       </Router>
       <Footer />
       </AuthProvider>
