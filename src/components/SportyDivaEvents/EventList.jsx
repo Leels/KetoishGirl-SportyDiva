@@ -56,11 +56,11 @@ class EventList extends Component {
     }
 
     return (
-      <div className="container pageHeight">
-        <div className="panel panel-default">
+      <div className="pageHeight">
+        <div className="panel panel-default section">
           <div className="panel-heading">
             <h1 className="panel-title">
-              Sporty Diva Events
+              SPORTY DIVA EVENTS
             </h1>
           </div>
           <br/>
@@ -73,9 +73,9 @@ class EventList extends Component {
           <br/>
           <RunLocations />
           <br/>
-          <div className="list">
+        <div className="list">
           <h2 style={subTitle} className="panel-title">
-            Event List
+            EVENT LIST
           </h2>
           <div className="panel-body title">
             <table className="table table-stripe">
@@ -97,7 +97,7 @@ class EventList extends Component {
               </tbody>
             </table>
             <AddEventAccess/>
-          </div>
+            </div>
           </div>
         </div>
         <FAQs/>

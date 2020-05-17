@@ -5,9 +5,6 @@ import LoginButton from './LoginButton';
 const Footer = () => {
 
 const positioning = {
-  position: "relative",
-  left: "0",
-  right: "0",
   bottom: "0"
 }
   return (
@@ -20,15 +17,15 @@ const positioning = {
                 <i className="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">
                 </i>
               </a>
-              <a className="gplus-ic">
-                <i className="fab fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x">
+              <a href="https://www.youtube.com/channel/UCeo1QhY8KA3WPmX9BnlnHfQ"  className="yt-ic">
+                <i className="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x">
                 </i>
               </a>
               <a href="https://www.linkedin.com/in/rose-coates-243621191/?trk=people-guest_profile-result-card_result-card_full-click" className="li-ic">
                 <i className="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x">
                 </i>
               </a>
-              <a href="https://www.instagram.com/ketoishgirl/?hl=en" className="ins-ic">
+              <a href="https://www.instagram.com/theketoishgirl/" className="ins-ic">
                 <i className="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x">
                 </i>
               </a>

@@ -23,7 +23,7 @@ render() {
   }
 
   return (
-      <MDBNavbar style={{ height: "75px" }} color="unique-color-dark" dark expand="md">
+      <MDBNavbar style={{ height: "75px" }} color="unique-color-dark" dark expand="md" fixed="top" scrolling>
         <MDBNavbarBrand>
           <MDBNavLink to="/" style={logoStyles}>KETOISH GIRL</MDBNavLink>
         </MDBNavbarBrand>

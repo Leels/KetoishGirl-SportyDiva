@@ -5,8 +5,10 @@ import React from "react";
 function KetoBasics(){
 
   return (
-    <div class="container pageHeight">
-    <h1 align="center">Keto Basics</h1>
+    <div className="pageHeight">
+      <div className="section">
+        <h1>KETO BASICS</h1>
+      </div>
     </div>
   );
 }

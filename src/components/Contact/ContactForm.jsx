@@ -47,15 +47,14 @@ class ContactForm extends Component {
     const logoStyles = {
       fontFamily: "Comfortaa",
       color: "#80deea",
-      fontSize: "90%"
     }
 
     return (
-    <div className="container pageHeight">
-      <div className="panel panel-default">
+    <div className="pageHeight">
+      <div className="panel panel-default section">
         <div className="panel-heading">
           <h1 className="panel-title">
-            Contact <span style={logoStyles}>KETOISH GIRL</span>
+            CONTACT <span style={logoStyles}>KETOISH GIRL</span>
           </h1>
         </div>
         <br/>

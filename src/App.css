@@ -1,23 +1,28 @@
 .pageHeight {
-  min-height: 90vh;
-  padding-top: 30px;
-  padding-bottom: 15px;
-  overflow: hidden;
-  display: block;
-  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  margin-top: 75px;
+  /* overflow: hidden; */
+  /* display: block; */
+  /* position: relative; */
+}
+
+.section {
+  padding: 40px 90px 80px 90px;
+  margin: 0 90px;
 }
 
 h1 {
   text-align: center;
-  padding-top: 5px;
+  margin: 40px;
   /* font-size: 400%; */
 }
 
 body {
-  color: #1C2331;
   font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
-  /* font-size: 300%; */
+  text-align: center;
+  margin: 40px;
 }

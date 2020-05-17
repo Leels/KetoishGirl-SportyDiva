@@ -3,24 +3,12 @@ import React from "react";
 
 function LandingPage(){
 
-  const background = {
-    backgroundColor: "black",
-  }
-
-  const image = {
-    display: "block",
-    maxWidth: "65%",
-  }
-
-  const text = {
-    color: 'white'
-  }
-
   return (
-    <div style={background}>
+    <div className="pageHeight">
+      <div className="section">
+        <h1>LANDING PAGE</h1>
+      </div>
     </div>
-
-
   );
 }
 

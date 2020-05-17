@@ -3,8 +3,10 @@ import React from "react";
 function ScheduleAppointment(){
 
   return (
-    <div class="container pageHeight">
-    <h1>Schedule an Appointment</h1>
+    <div className="pageHeight">
+      <div className="section">
+        <h1>SCHEDULE AN APPOINTMENT</h1>
+      </div>
     </div>
   );
 }
