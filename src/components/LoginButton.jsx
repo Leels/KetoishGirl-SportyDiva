@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import firebase, { app } from '../Firebase';
-import { AuthContext } from "./../Auth";
+import { AuthContext } from "../Auth";
 
 
 

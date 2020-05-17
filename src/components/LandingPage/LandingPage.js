@@ -1,6 +1,6 @@
 import React from "react";
-import firebase, { app } from '../Firebase';
-import LoginButton from './LoginButton';
+import firebase, { app } from '../../Firebase';
+import LoginButton from '../LoginButton';
 
 
 

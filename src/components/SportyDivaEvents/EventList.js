@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import firebase from './../Firebase';
+import firebase from '../../Firebase';
 import './EventList.css'
 import SportyDivaCarousel from './SportyDivaCarousel';
 import RunLocations from './RunLocations';

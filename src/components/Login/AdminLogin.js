@@ -1,7 +1,7 @@
 import React, { useCallback, useContext } from "react";
 import { withRouter, Redirect } from "react-router";
-import app from "./../Firebase.js";
-import {AuthContext}  from "./../Auth.js";
+import app from "../../Firebase.js";
+import {AuthContext}  from "../../Auth.js";
 
 const AdminLogin = ({ history }) => {
   const { currentUser } = useContext(AuthContext);
