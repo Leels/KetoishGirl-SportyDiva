@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import firebase, { app } from '../../Firebase';
+// import firebase, { app } from '../../Firebase';
 import {Link} from 'react-router-dom';
 import { AuthContext } from "../../Auth";
 

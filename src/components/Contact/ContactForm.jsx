@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import firebase from '../../Firebase';
 
 class ContactForm extends Component {
@@ -78,7 +77,7 @@ class ContactForm extends Component {
             </div>
             <div className="form-group">
               <label for="message">Your Message*</label>
-              <textArea className="form-control" name="message" placeholder="Your message ..." cols="80" rows="3" onChange={this.onChange}></textArea>
+              <textArea className="form-control" name="message" placeholder="Your message ..." value={message} cols="80" rows="3" onChange={this.onChange}></textArea>
             </div>
             <button type="submit" className="btn btn-success">Send</button>
           </form>

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component} from 'react';
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage/LandingPage';
 import KetoBasics from './components/KetoBasics/KetoBasics';

@@ -1,7 +1,6 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import LoginButton from './LoginButton';
-import {Link} from 'react-router-dom';
 
 const Footer = () => {
 

@@ -1,5 +1,5 @@
 import * as firebase from 'firebase';
-import firestore from 'firebase/firestore'
+// import firestore from 'firebase/firestore'
 import 'firebase/storage';
 import 'firebase/database';
 
