@@ -18,10 +18,6 @@ function LandingPage(){
 
   return (
     <div style={background}>
-    <div className="container-fluid">
-      <img style={image} src="./RoseCover.jpg" />
-      <h3 style={text}> Hi, I'm Rose.</h3>
-      </div>
     </div>
 
 

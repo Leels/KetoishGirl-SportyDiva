@@ -1,9 +1,6 @@
 
 import React, { Component } from "react";
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
-MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
-import {Link} from 'react-router-dom'
-
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBIcon } from "mdbreact";
 
 class Navbar extends Component {
 state = {
@@ -22,7 +19,7 @@ render() {
   }
 
   const icon = {
-    paddingLeft: "8px"
+    paddingLeft: "10px"
   }
 
   return (

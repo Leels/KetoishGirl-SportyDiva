@@ -43,7 +43,7 @@ const positioning = {
       <LoginButton/>
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright:{" "}
-          Lela Smith
+          KETOISH GIRL
         </MDBContainer>
       </div>
     </MDBFooter>

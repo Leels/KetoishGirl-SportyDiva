@@ -3,20 +3,21 @@
   padding-top: 30px;
   padding-bottom: 15px;
   overflow: hidden;
- display: block;
- position: relative;
+  display: block;
+  position: relative;
 }
 
 h1 {
   text-align: center;
   padding-top: 5px;
-  font-size: 400%;
+  /* font-size: 400%; */
 }
 
 body {
   color: #1C2331;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
-  font-size: 300%;
+  /* font-size: 300%; */
 }
