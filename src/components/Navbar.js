@@ -25,11 +25,8 @@ render() {
     paddingLeft: "8px"
   }
 
-  const ish = {
-    fontSize: "80%"
-  }
   return (
-      <MDBNavbar color="unique-color-dark" dark expand="md">
+      <MDBNavbar style={{ height: "75px" }} color="unique-color-dark" dark expand="md">
         <MDBNavbarBrand>
           <MDBNavLink to="/" style={logoStyles}>KETOISH GIRL</MDBNavLink>
         </MDBNavbarBrand>
@@ -37,23 +34,22 @@ render() {
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav center>
             <MDBNavItem>
-            <MDBNavLink to="/MyStory">My Story</MDBNavLink>
+            <MDBNavLink to="/MyStory">MY STORY</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/KetoBasics">Keto Basics</MDBNavLink>
+              <MDBNavLink to="/KetoBasics">KETO BASICS</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="/Resources">Resources</MDBNavLink>
+              <MDBNavLink to="/Resources">RESOURCES</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-            <MDBNavLink to="/EventList">Sporty Diva Events</MDBNavLink>
+            <MDBNavLink to="/EventList">SPORTY DIVA EVENTS</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-            <MDBNavLink to="/ScheduleAppointment">Schedule an Appointment</MDBNavLink>
+            <MDBNavLink to="/ScheduleAppointment">APPOINTMENTS</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-            <MDBNavLink to="/Contact">Contact
-            <MDBIcon style={icon} icon="envelope" />
+            <MDBNavLink to="/Contact">CONTACT<MDBIcon style={icon} icon="envelope" />
             </MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
