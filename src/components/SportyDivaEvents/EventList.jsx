@@ -54,9 +54,6 @@ class EventList extends Component {
       textAlign: "center",
       paddingTop: "20px"
     }
-    const section = {
-      marginTop: "50px"
-    }
 
     return (
       <div className="container pageHeight">
