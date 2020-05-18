@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import firebase from '../../Firebase';
+import ReactWOW from 'react-wow';
 
 class ContactForm extends Component {
 
@@ -47,21 +48,25 @@ class ContactForm extends Component {
     const logoStyles = {
       fontFamily: "Comfortaa",
       color: "#80deea",
+      // color: "#4db6ac",
     }
 
     return (
     <div className="pageHeight">
       <div className="panel panel-default section">
+        <ReactWOW animation="fadeInUp">
         <div className="panel-heading">
           <h1 className="panel-title">
             CONTACT <span style={logoStyles}>KETOISH GIRL</span>
           </h1>
         </div>
-        <br/>
-        <h5 align="center">Got a question? I'd love to hear from you! Send me a message and I'll respond as soon as possible.</h5>
-        <br/>
+          </ReactWOW>
+          <ReactWOW animation="fadeInUp">
+        <h5 align="center" style={{paddingBottom: '40px'}}>Got a question? I'd love to hear from you! Send me a message and I'll respond as soon as possible.</h5>
+        </ReactWOW>
         <div className="panel-body">
           <form onSubmit={this.onSubmit}>
+        <ReactWOW animation="fadeInUp">
             <div className="form-group">
               <label for="name">Name*</label>
               <input type="text" className="form-control" name="name" placeholder="First and Last Name" value={name} onChange={this.onChange}/>
@@ -78,7 +83,10 @@ class ContactForm extends Component {
               <label for="message">Your Message*</label>
               <textArea className="form-control" name="message" placeholder="Your message ..." value={message} cols="80" rows="3" onChange={this.onChange}></textArea>
             </div>
+            </ReactWOW>
+            <ReactWOW animation="fadeInUp">
             <button type="submit" className="btn btn-success">Send</button>
+            </ReactWOW>
           </form>
         </div>
       </div>

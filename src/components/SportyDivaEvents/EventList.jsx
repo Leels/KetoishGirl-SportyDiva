@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import firebase from '../../Firebase';
+import ReactWOW from 'react-wow';
 import './EventList.css'
-import SportyDivaCarousel from './SportyDivaCarousel';
-import RunLocations from './RunLocations';
-import FAQs from './FAQs';
 import AddEventAccess from './AddEventAccess';
 
 class EventList extends Component {
@@ -47,7 +45,8 @@ class EventList extends Component {
   render() {
 
     const underline = {
-      fontWeight: "bold"
+      fontWeight: "bold",
+      // fontSize: "20px"
     }
 
     const subTitle = {
@@ -56,31 +55,17 @@ class EventList extends Component {
     }
 
     return (
-      <div className="pageHeight">
-        <div className="panel panel-default section">
-          <div className="panel-heading">
-            <h1 className="panel-title">
-              SPORTY DIVA EVENTS
-            </h1>
-          </div>
-          <br/>
-          <SportyDivaCarousel />
-          <br/>
-          <p><strong>Sporty Diva Run/Walk Events </strong>are designed to encourage, motivate and inspire the first time athlete or those returning to fitness in a fun, friendly and supportive noncompetitive race environment with a philanthropic/pay it forward mission. All fitness levels are welcome to participate, we have no time limits for our races. This is your day!</p>
-          <p>Each participant will receive a Sporty Diva goodybag and a finisher's medal for each event. Snacks like trail mix, red vines, chips, cookies, candy, soda, water and juice will be available at the start/finish line. All participant's finishing times will be recorded and posted online three days after the event.</p>
-          <br/>
-          <p className="quote"><em>"If you run, you are a runner. It doesn't matter how fast or how far. It doesn't matter if today is your first day or if you've been running for twenty years. There is no test to pass, no license to earn, no membership card to get. You just run."</em> - John Bingham</p>
-          <br/>
-          <RunLocations />
-          <br/>
-        <div className="list">
-          <h2 style={subTitle} className="panel-title">
+      <div>
+        <ReactWOW animation="fadeInUp">
+          <h3 style={subTitle} className="panel-title">
             EVENT LIST
-          </h2>
+          </h3>
+        </ReactWOW>
+        <div className="list">
           <div className="panel-body title">
             <table className="table table-stripe">
               <thead>
-                <tr>
+                <tr size="24">
                   <th>Event</th>
                   <th>Date</th>
                   <th>Location</th>
@@ -97,10 +82,8 @@ class EventList extends Component {
               </tbody>
             </table>
             <AddEventAccess/>
-            </div>
           </div>
         </div>
-        <FAQs/>
       </div>
     );
   }

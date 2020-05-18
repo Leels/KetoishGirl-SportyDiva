@@ -80,8 +80,8 @@ class EditEvent extends Component {
 
   render() {
     return (
-      <div class="container pageHeight">
-        <div class="panel panel-default">
+      <div class="pageHeight">
+        <div class="section panel panel-default">
           <div class="panel-heading">
             <h1 class="panel-title">
               Update Event
@@ -122,7 +122,7 @@ class EditEvent extends Component {
                 <input type="text" class="form-control" name="restrooms" value={this.state.restrooms} onChange={this.onChange} placeholder="Restrooms" />
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
-              <h4><Link to="/EventList" class="btn btn-primary">Back to Event List</Link></h4>
+              <h4><Link to="/SportyDivaEvents" class="btn btn-primary">Back to Event List</Link></h4>
             </form>
           </div>
         </div>

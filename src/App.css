@@ -15,14 +15,17 @@
 h1 {
   text-align: center;
   margin: 40px;
-  /* font-size: 400%; */
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
-h2 {
+h3 {
   text-align: center;
   margin: 40px;
+}
+
+th {
+  font-size: 18px;
 }

@@ -5,7 +5,7 @@ import KetoBasics from './components/KetoBasics/KetoBasics';
 import MyStory from './components/MyStory/MyStory';
 import Resources from './components/Resources/Resources';
 import ScheduleAppointment from './components/ScheduleAppointment/ScheduleAppointment';
-import EventList from './components/SportyDivaEvents/EventList';
+import SportyDivaEvents from './components/SportyDivaEvents/SportyDivaEvents';
 import Footer from './components/Footer';
 import EditEvent from './components/SportyDivaEvents/EditEvent';
 import CreateEvent from './components/SportyDivaEvents/CreateEvent';
@@ -28,7 +28,7 @@ class App extends Component {
       <Navbar />
       <Route exact path='/' component={LandingPage} />
       <Route path='/adminlogin' component={AdminLogin} />
-      <Route path='/eventlist' component={EventList} />
+      <Route path='/sportydivaevents' component={SportyDivaEvents} />
       <Route path='/editevent/:id' component={EditEvent} />
       <PrivateRoute path='/createevent' component={CreateEvent} />
       <Route path='/showevent/:id' component={ShowEvent} />

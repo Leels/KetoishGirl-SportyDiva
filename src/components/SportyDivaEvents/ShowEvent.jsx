@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import firebase from '../../Firebase';
 import { Link } from 'react-router-dom';
+import ReactWOW from 'react-wow';
 
 class ShowEvent extends Component {
 
@@ -37,10 +38,7 @@ class ShowEvent extends Component {
   }
 
   render() {
-    const pageHeight = {
-      paddingTop: "30px",
-      paddingBottom: "250px"
-    }
+  
     const back = {
       paddingTop: "12px",
       textAlign: "center"
@@ -59,19 +57,24 @@ class ShowEvent extends Component {
     }
 
     return (
-      <div class="container pageHeight">
-        <div class="panel panel-default">
+      <div class="pageHeight">
+        <div class="section panel panel-default">
           <div class="panel-heading">
-          <h1>Sporty Diva</h1>
+          <ReactWOW animation="fadeInUp">
+          <h1>SPORTY DIVA</h1>
+          </ReactWOW>
+          <ReactWOW animation="fadeInUp">
             <h2 style={back} class="panel-title">
               {this.state.event.name}
             </h2>
-          </div>
-          <br/>
+            </ReactWOW>
+        </div>
+        <ReactWOW animation="fadeInUp">
           <a href={this.state.event.registrationLink}>
-          <h3 align="center">Register here!</h3>
+          <h3 style={{ marginTop: '0'}} align="center">Register here!</h3>
           </a>
-          <br/>
+        </ReactWOW>
+        <ReactWOW animation="fadeInUp">
           <div class="panel-body">
             <dl>
             <div style={colorLime}>
@@ -105,8 +108,9 @@ class ShowEvent extends Component {
             </dl>
             <Link to={`/editevent/${this.state.key}`} class="btn btn-success">Edit</Link>&nbsp;
             <button onClick={this.delete.bind(this, this.state.key)} class="btn btn-danger">Delete</button>
-            <h4 style={back}><Link to="/EventList">Back to Event List</Link></h4>
+            <h4 style={back}><Link to="/SportyDivaEvents">Back to Event List</Link></h4>
           </div>
+        </ReactWOW>
         </div>
       </div>
     );

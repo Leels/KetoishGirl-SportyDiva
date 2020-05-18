@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import LoginButton from './LoginButton';
+import ReactWOW from 'react-wow';
 
 const Footer = () => {
 
@@ -10,6 +11,7 @@ const positioning = {
   return (
     <MDBFooter style={positioning} color="unique-color-dark" className="font-small darken-3 pt-0">
       <MDBContainer>
+      <ReactWOW animation="fadeInUp">
         <MDBRow>
           <MDBCol md="12" className="py-5">
             <div className="mb-5 flex-center">
@@ -35,6 +37,7 @@ const positioning = {
             </div>
           </MDBCol>
         </MDBRow>
+        </ReactWOW>
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
       <LoginButton/>

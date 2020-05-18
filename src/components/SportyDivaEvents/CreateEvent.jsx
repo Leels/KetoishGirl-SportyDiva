@@ -64,11 +64,11 @@ class CreateEvent extends Component {
     const { name, date, mission, course, schedule, timing, address, restrooms, registrationLink } = this.state;
 
     return (
-      <div className="container pageHeight">
-        <div className="panel panel-default">
+      <div className="pageHeight">
+        <div className="section panel panel-default">
           <div className="panel-heading">
             <h1 className="panel-title">
-              Add Event
+              ADD EVENT
             </h1>
           </div>
           <div className="panel-body">

@@ -15,6 +15,7 @@ render() {
   const logoStyles = {
     fontFamily: "Comfortaa",
     color: "#b2ebf2",
+    // color: "#4db6ac",
     fontSize: "150%",
   }
 
@@ -23,7 +24,7 @@ render() {
   }
 
   return (
-      <MDBNavbar style={{ height: "75px" }} color="unique-color-dark" dark expand="md" fixed="top" scrolling>
+      <MDBNavbar className="navbar navbar-expand-lg" color="unique-color-dark" dark expand="md" fixed="top">
         <MDBNavbarBrand>
           <MDBNavLink to="/" style={logoStyles}>KETOISH GIRL</MDBNavLink>
         </MDBNavbarBrand>
@@ -40,7 +41,7 @@ render() {
               <MDBNavLink to="/Resources">RESOURCES</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-            <MDBNavLink to="/EventList">SPORTY DIVA EVENTS</MDBNavLink>
+            <MDBNavLink to="/SportyDivaEvents">SPORTY DIVA EVENTS</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
             <MDBNavLink to="/ScheduleAppointment">APPOINTMENTS</MDBNavLink>
