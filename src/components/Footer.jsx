@@ -1,9 +1,15 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import LoginButton from './LoginButton';
-import ReactWOW from 'react-wow';
 
 const Footer = () => {
+
+const hoverStyle = {
+  "&:hover": {
+    backgroundColor: "red",
+    color: "red",
+  },
+}
 
 const positioning = {
   bottom: "0"
@@ -14,8 +20,8 @@ const positioning = {
         <MDBRow>
           <MDBCol md="12" className="py-5">
             <div className="mb-5 flex-center">
-              <a href="https://www.facebook.com/ketoishgirl" className="fb-ic">
-                <i className="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">
+              <a style={hoverStyle} href="https://www.facebook.com/ketoishgirl" className="fb-ic">
+                <i style={hoverStyle} className="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">
                 </i>
               </a>
               <a href="https://www.youtube.com/channel/UCeo1QhY8KA3WPmX9BnlnHfQ"  className="yt-ic">

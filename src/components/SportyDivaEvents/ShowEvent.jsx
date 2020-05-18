@@ -43,7 +43,7 @@ class ShowEvent extends Component {
   
     const back = {
       padding: "20px",
-      textAlign: "center"
+      textAlign: "center",
     }
 
     const colorLime = {
@@ -65,22 +65,31 @@ class ShowEvent extends Component {
       textDecoration: "underline",
     }
 
+    const center = {
+      display: "block",
+      margin: "40px auto"
+    }
+
+    const newMargins = {
+      margin: "40px auto 20px auto"
+    }
+
     return (
       <div class="pageHeight">
         <div class="section panel panel-default">
           <div class="panel-heading">
           <ReactWOW animation="fadeInUp">
-          <h1>SPORTY DIVA</h1>
+          <h2 style={newMargins}>SPORTY DIVA</h2>
           </ReactWOW>
           <ReactWOW animation="fadeInUp">
-            <h2 style={back} class="panel-title">
+            <h3 style={newMargins} class="panel-title">
               {this.state.event.name}
-            </h2>
+            </h3>
             </ReactWOW>
         </div>
         <ReactWOW animation="fadeInUp">
           <a href={this.state.event.registrationLink}>
-          <h4 style={{ margin: '20px auto 40px auto'}} align="center">Register here!</h4>
+          <button style={center} className="btn btn-primary">Register here!</button>
           </a>
         </ReactWOW>
         <ReactWOW animation="fadeInUp">
