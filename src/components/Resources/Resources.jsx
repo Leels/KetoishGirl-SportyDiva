@@ -4,7 +4,7 @@ import ReactWOW from 'react-wow';
 function Resources(){
 
   return (
-    <div className="pageHeight">
+    <div id="resources" className="pageHeight">
       <div className="section">
         <ReactWOW animation="fadeInUp">
           <h1>RESOURCES</h1>

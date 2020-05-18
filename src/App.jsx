@@ -29,7 +29,7 @@ class App extends Component {
       <Route exact path='/' component={LandingPage} />
       <Route path='/adminlogin' component={AdminLogin} />
       <Route path='/sportydivaevents' component={SportyDivaEvents} />
-      <Route path='/editevent/:id' component={EditEvent} />
+      <PrivateRoute path='/editevent/:id' component={EditEvent} />
       <PrivateRoute path='/createevent' component={CreateEvent} />
       <Route path='/showevent/:id' component={ShowEvent} />
       <Route exact path='/ketobasics' component={KetoBasics} />

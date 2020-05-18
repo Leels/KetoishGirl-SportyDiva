@@ -84,7 +84,7 @@ class EditEvent extends Component {
         <div class="section panel panel-default">
           <div class="panel-heading">
             <h1 class="panel-title">
-              Update Event
+              UPDATE EVENT
             </h1>
           </div>
           <div class="panel-body">

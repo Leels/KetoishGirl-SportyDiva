@@ -21,3 +21,8 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.nav-item > .active {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+

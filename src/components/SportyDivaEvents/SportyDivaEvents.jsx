@@ -8,7 +8,7 @@ import EventList from './EventList';
 function SportyDivaEvents(){
 
   return (
-      <div className="pageHeight">
+      <div id="sportyDivaEvents" className="pageHeight">
         <div className="panel panel-default section">
             <ReactWOW animation="fadeInUp">
           <div className="panel-heading">

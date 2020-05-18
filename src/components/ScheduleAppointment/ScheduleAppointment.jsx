@@ -4,7 +4,7 @@ import ReactWOW from 'react-wow';
 function ScheduleAppointment(){
 
   return (
-    <div className="pageHeight">
+    <div id="scheduleAppointment" className=" scheduleAppointment pageHeight">
       <div className="section">
         <ReactWOW animation="fadeInUp">
           <h1>SCHEDULE AN APPOINTMENT</h1>

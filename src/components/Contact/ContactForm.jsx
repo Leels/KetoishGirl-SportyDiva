@@ -52,7 +52,7 @@ class ContactForm extends Component {
     }
 
     return (
-    <div className="pageHeight">
+    <div id="contact" className="pageHeight">
       <div className="panel panel-default section">
         <ReactWOW animation="fadeInUp">
         <div className="panel-heading">
