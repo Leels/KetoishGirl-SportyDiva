@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import firebase from '../../Firebase';
 import { Link } from 'react-router-dom';
 import ReactWOW from 'react-wow';
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { EditButton, DeleteButton } from './AdminButtons';
 
 class ShowEvent extends Component {
 
@@ -40,20 +42,27 @@ class ShowEvent extends Component {
   render() {
   
     const back = {
-      paddingTop: "12px",
+      padding: "20px",
       textAlign: "center"
     }
 
     const colorLime = {
       backgroundColor: "#F0F4C3",
-      paddingLeft: "10px",
-      fontSize: "120%"
+      margin: "10px",
+      padding: "10px",
+      // fontSize: "110%"
     }
 
     const colorGrey = {
       backgroundColor: "#eceff1",
-      paddingLeft: "10px",
-      fontSize: "120%"
+      margin: "10px",
+      padding: "10px",
+      // fontSize: "110%"
+    }
+
+    const title = {
+      paddingBottom: "10px",
+      textDecoration: "underline",
     }
 
     return (
@@ -71,43 +80,51 @@ class ShowEvent extends Component {
         </div>
         <ReactWOW animation="fadeInUp">
           <a href={this.state.event.registrationLink}>
-          <h3 style={{ marginTop: '0'}} align="center">Register here!</h3>
+          <h4 style={{ margin: '20px auto 40px auto'}} align="center">Register here!</h4>
           </a>
         </ReactWOW>
         <ReactWOW animation="fadeInUp">
           <div class="panel-body">
             <dl>
             <div style={colorLime}>
-            <dt>Date</dt>
+            <dt style={title}>Date</dt>
             <dd>{this.state.event.date}</dd>
             </div>
             <div style={colorGrey}>
-              <dt>Pay it Forward Mission</dt>
+              <dt style={title}>Pay it Forward Mission</dt>
               <dd>{this.state.event.mission}</dd>
               </div>
               <div style={colorLime}>
-              <dt>Course Description</dt>
+              <dt style={title}>Course Description</dt>
               <dd>{this.state.event.course}</dd>
               </div>
               <div style={colorGrey}>
-              <dt>Event Day Schedule</dt>
+              <dt style={title}>Event Day Schedule</dt>
               <dd>{this.state.event.schedule}</dd>
               </div>
               <div style={colorLime}>
-              <dt>Timing</dt>
+              <dt style={title}>Timing</dt>
               <dd>{this.state.event.timing}</dd>
               </div>
               <div style={colorGrey}>
-              <dt>Location</dt>
+              <dt style={title}>Location</dt>
               <dd>{this.state.event.address}</dd>
               </div>
               <div style={colorLime}>
-              <dt>Restrooms</dt>
+              <dt style={title}>Restrooms</dt>
               <dd>{this.state.event.restrooms}</dd>
               </div>
             </dl>
-            <Link to={`/editevent/${this.state.key}`} class="btn btn-success">Edit</Link>&nbsp;
-            <button onClick={this.delete.bind(this, this.state.key)} class="btn btn-danger">Delete</button>
+            <MDBContainer>
+              <MDBRow>
+            <Link to={`/editevent/${this.state.key}`}>
+            <EditButton/>
+            </Link>
+            <div onClick={this.delete.bind(this, this.state.key)}>
+              <DeleteButton/>
+            </div>
+            </MDBRow>
+            </MDBContainer>
             <h4 style={back}><Link to="/SportyDivaEvents">Back to Event List</Link></h4>
           </div>
         </ReactWOW>

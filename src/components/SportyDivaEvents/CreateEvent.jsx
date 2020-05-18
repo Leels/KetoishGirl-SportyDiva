@@ -110,7 +110,7 @@ class CreateEvent extends Component {
                 <textArea className="form-control" name="registrationLink" onChange={this.onChange} placeholder="https://runsignup.com/" cols="80" rows="3">{registrationLink}</textArea>
               </div>
               <button type="submit" className="btn btn-success">Submit</button>
-              <h4><Link to="/EventList" className="btn btn-primary">Back to Event List</Link></h4>
+              <h4><Link to="/SportyDivaEvents" className="btn btn-primary">Back to Event List</Link></h4>
             </form>
           </div>
         </div>

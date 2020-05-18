@@ -11,13 +11,17 @@ function LoginButton(){
   if (currentUser) {
   return  (
     <div>
-    <a onClick={() => app.auth().signOut()}>Sign Out</a>
+    <a onClick={() => app.auth().signOut()}>
+    <i class="fas fa-heart"></i>
+    </a>
     </div>
   );
   }
   return (
     <div >
-    <a href="./AdminLogin">Admin</a>
+    <a href="./AdminLogin">
+    <i class="far fa-heart"/>
+    </a>
   </div>
   );
 }

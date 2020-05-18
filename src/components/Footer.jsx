@@ -11,7 +11,6 @@ const positioning = {
   return (
     <MDBFooter style={positioning} color="unique-color-dark" className="font-small darken-3 pt-0">
       <MDBContainer>
-      <ReactWOW animation="fadeInUp">
         <MDBRow>
           <MDBCol md="12" className="py-5">
             <div className="mb-5 flex-center">
@@ -37,12 +36,11 @@ const positioning = {
             </div>
           </MDBCol>
         </MDBRow>
-        </ReactWOW>
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
       <LoginButton/>
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright:{" "}
+          &copy; {new Date().getFullYear()}{" "}
           KETOISH GIRL
         </MDBContainer>
       </div>
