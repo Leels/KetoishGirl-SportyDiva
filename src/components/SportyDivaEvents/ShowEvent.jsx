@@ -48,15 +48,17 @@ class ShowEvent extends Component {
 
     const colorLime = {
       backgroundColor: "#F0F4C3",
-      margin: "10px",
+      margin: "1px 0",
       padding: "10px",
+      // boxShadow: "0px 0px 15px #dfdfdf",
       // fontSize: "110%"
     }
 
     const colorGrey = {
       backgroundColor: "#eceff1",
-      margin: "10px",
+      margin: "1px 0",
       padding: "10px",
+      // boxShadow: "0px 0px 15px #dfdfdf",
       // fontSize: "110%"
     }
 
@@ -67,7 +69,7 @@ class ShowEvent extends Component {
 
     const center = {
       display: "block",
-      margin: "40px auto"
+      margin: "40px auto",
     }
 
     const newMargins = {
@@ -94,7 +96,7 @@ class ShowEvent extends Component {
         </ReactWOW>
         <ReactWOW animation="fadeInUp">
           <div class="panel-body">
-            <dl>
+            <dl style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
             <div style={colorLime}>
             <dt style={title}>Date</dt>
             <dd>{this.state.event.date}</dd>

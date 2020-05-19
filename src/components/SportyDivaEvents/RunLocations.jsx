@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { MDBRow, MDBCol, MDBContainer, MDBView, MDBMask } from "mdbreact";
+import { MDBRow, MDBCol, MDBContainer, MDBView, MDBMask, MDBBox } from "mdbreact";
 import ReactWOW from 'react-wow';
 
 class RunLocations extends Component {
@@ -8,6 +8,7 @@ class RunLocations extends Component {
     const imageSize = {
       height: "250px",
       maxWidth: "auto",
+      // boxShadow: "0px 0px 15px #dfdfdf",
     }
     const subTitle = {
       textAlign: "center",
@@ -23,34 +24,36 @@ class RunLocations extends Component {
         <ReactWOW animation="fadeInUp">
         <MDBRow>
           <MDBCol lg="4" md="12" className="mb-3">
+          <MDBBox style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
             <MDBView hover>
-              <div class="card">
-              <img style={imageSize} src="./FoothillsTrail.jpg" className="img-fluid z-depth-1" alt="" />
-              </div>
+              <img src="./FoothillsTrail.jpg" className="img-fluid z-depth-1" alt="" />
               <MDBMask className="flex-center" overlay="black-light">
                 <p className="white-text">Orting Foothills Trail</p>
               </MDBMask>
             </MDBView>
+          </MDBBox>
           </MDBCol>
           <MDBCol lg="4" md="12" className="mb-3">
+          <MDBBox style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
             <MDBView hover>
-            <div class="card">
+            <div className="card cardShadow">
             <img style={imageSize} src="./ChambersBay3.png" className="img-fluid z-depth-1" alt="" />
             </div>
               <MDBMask className="flex-center" overlay="black-light">
                 <p className="white-text">Chambers Bay</p>
               </MDBMask>
            </MDBView>
+           </MDBBox>
           </MDBCol>
           <MDBCol lg="4" md="12" className="mb-3">
+          <MDBBox style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
             <MDBView hover>
-              <div class="card">
               <img style={imageSize} src="./FoothillsTrail2.jpeg" className="img-fluid z-depth-1" alt="" />
-              </div>
               <MDBMask className="flex-center" overlay="black-light">
                 <p className="white-text">Western Chehalis Trail</p>
               </MDBMask>
            </MDBView>
+           </MDBBox>
           </MDBCol>
         </MDBRow>
         </ReactWOW>

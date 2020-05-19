@@ -84,9 +84,9 @@ class EditEvent extends Component {
       <div class="pageHeight">
         <div class="section panel panel-default">
           <div class="panel-heading">
-            <h1 class="panel-title">
+            <h2 class="panel-title">
               UPDATE EVENT
-            </h1>
+            </h2>
           </div>
           <div class="panel-body">
             <form onSubmit={this.onSubmit}>
@@ -123,7 +123,7 @@ class EditEvent extends Component {
                 <input type="text" class="form-control" name="restrooms" value={this.state.restrooms} onChange={this.onChange}/>
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
-              <h4><Link to="/" class="btn btn-primary">Back to Event List</Link></h4>
+              <h4><Link to="./" class="btn btn-primary">Back to Event List</Link></h4>
             </form>
           </div>
         </div>

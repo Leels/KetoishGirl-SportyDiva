@@ -1,7 +1,7 @@
 import React from "react";
 import MyStory from "../MyStory/MyStory";
 import KetoBasics from "../KetoBasics/KetoBasics";
-import Resources from "../Resources/Resources";
+import Header from "../Header";
 import SportyDivaEvents from "../SportyDivaEvents/SportyDivaEvents";
 import ScheduleAppointment from '../ScheduleAppointment/ScheduleAppointment';
 import ContactForm from "../Contact/ContactForm";
@@ -12,6 +12,7 @@ function LandingPage(){
   return (
     <div >
       <div >
+        <Header/>
         <MyStory/>
         <KetoBasics/>
         <SportyDivaEvents/>

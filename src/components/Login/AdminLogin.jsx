@@ -29,8 +29,8 @@ const AdminLogin = ({ history }) => {
     <div className="pageHeight">
       <div className="panel panel-default section">
         <div className="panel-heading">
-          <h1 className="panel-title">
-            ADMIN LOGIN</h1>
+          <h2 className="panel-title">
+            ADMIN LOGIN</h2>
         </div>
         <br/>
         <div className="panel-body">

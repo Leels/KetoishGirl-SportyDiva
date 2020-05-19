@@ -4,10 +4,10 @@ import ReactWOW from 'react-wow';
 function ScheduleAppointment(){
 
   return (
-    <div id="scheduleAppointment" className=" scheduleAppointment pageHeight">
+    <div id="scheduleAppointment" className="pageHeight">
       <div className="section">
         <ReactWOW animation="fadeInUp">
-          <h1>SCHEDULE AN APPOINTMENT</h1>
+          <h2>SCHEDULE AN APPOINTMENT</h2>
         </ReactWOW>
       </div>
     </div>

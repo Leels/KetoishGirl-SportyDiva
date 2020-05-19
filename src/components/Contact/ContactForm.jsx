@@ -48,7 +48,9 @@ class ContactForm extends Component {
     const logoStyles = {
       fontFamily: "Comfortaa",
       color: "#80deea",
+      fontWeight: "900",
       // color: "#4db6ac",
+      // color: "#84ffff",
     }
 
     return (
@@ -56,15 +58,18 @@ class ContactForm extends Component {
       <div className="panel panel-default section">
         <ReactWOW animation="fadeInUp">
         <div className="panel-heading">
-          <h1 className="panel-title">
+          <h2 className="panel-title">
             CONTACT <span style={logoStyles}>KETOISH GIRL</span>
-          </h1>
+          </h2>
         </div>
           </ReactWOW>
           <ReactWOW animation="fadeInUp">
-        <h5 align="center" style={{paddingBottom: '40px'}}>Got a question? I'd love to hear from you! Send me a message and I'll respond as soon as possible.</h5>
+           <div style={{paddingBottom: '40px'}} align="center">
+            <h5>Got a question? I'd love to hear from you! </h5>
+            <h5>Send me a message and I'll respond as soon as possible.</h5>
+          </div>
         </ReactWOW>
-        <div className="panel-body">
+        <div style={{width: "50vw", margin: "0 auto"}} className="panel-body">
           <form onSubmit={this.onSubmit}>
         <ReactWOW animation="fadeInUp">
             <div className="form-group">

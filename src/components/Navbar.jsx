@@ -34,7 +34,7 @@ render() {
   }
 
   return (
-      <MDBNavbar style={{padding: "0 40px"}} className="navbar navbar-expand-lg" color="unique-color-dark" dark expand="md" fixed="top">
+      <MDBNavbar style={{padding: "0 90px"}} className="navbar navbar-expand-lg" color="unique-color-dark" dark expand="md" fixed="top" transparent scrolling>
         <MDBNavbarBrand>
           <div onClick={() => scroll.scrollToTop()} className="logoStyles">KETOISH GIRL</div>
         </MDBNavbarBrand>

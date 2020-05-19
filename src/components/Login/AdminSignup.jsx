@@ -18,7 +18,7 @@ const AdminSignup = ({ history }) => {
 
   return (
     <div>
-      <h1>Sign up</h1>
+      <h2>Sign up</h2>
       <form onSubmit={handleSignUp}>
         <label>
           Email

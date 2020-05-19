@@ -1,7 +1,7 @@
 .pageHeight {
   min-height: 100vh;
   width: 100vw;
-  margin-top: 75px;
+  /* margin-top: 55px; */
   /* overflow: hidden; */
   /* display: block; */
   /* position: relative; */
@@ -12,7 +12,7 @@
   margin: 0 90px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   text-align: center;
   margin: 40px;
 }
@@ -28,9 +28,12 @@ body {
 
 .logoStyles {
   font-family: Comfortaa;
-  color: #b2ebf2;
-  /* color: #9da7a6; */
+  /* color: #4db6ac; */
+  color: #84ffff;
+  /* color: #80deea; */
+  /* color: #F5B895; */
   font-size: 150%;
+  font-weight: 700;
 }
 
 .logoStyles:hover {
@@ -40,4 +43,10 @@ body {
 .footerIcons:hover {
   transform: translateY(-2px);
 }
+
+a.fb-ic {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 

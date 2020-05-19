@@ -62,13 +62,14 @@ class EventList extends Component {
           </h3>
         </ReactWOW>
         <ReactWOW animation="fadeInUp">
-        <div className="list">
+        <div >
           <div className="panel-body title">
-            <table className="table table-stripe">
+            <table style={{boxShadow: "0px 0px 15px #dfdfdf"}} className="table list table-stripe">
             <ReactWOW animation="fadeInUp">
               <thead>
                 <tr>
                   <th style={tableHeaders}>Event</th>
+                  <th style={tableHeaders}>Mission</th>
                   <th style={tableHeaders}>Date</th>
                   <th style={tableHeaders}>Location</th>
                 </tr>
@@ -79,6 +80,7 @@ class EventList extends Component {
                 <ReactWOW animation="fadeInUp">
                   <tr key={i}>
                     <td><Link to={`/showevent/${event.key}`} style={underline}>{event.name}</Link></td>
+                    <td>{event.mission}</td>
                     <td>{event.date}</td>
                     <td>{event.address}</td>
                   </tr>

@@ -7,7 +7,7 @@ function Resources(){
     <div id="resources" className="pageHeight">
       <div className="section">
         <ReactWOW animation="fadeInUp">
-          <h1>RESOURCES</h1>
+          <h2>RESOURCES</h2>
         </ReactWOW>
       </div>
     </div>
