@@ -26,3 +26,18 @@ body {
   font-weight: 500;
 }
 
+.logoStyles {
+  font-family: Comfortaa;
+  color: #b2ebf2;
+  /* color: #9da7a6; */
+  font-size: 150%;
+}
+
+.logoStyles:hover {
+    cursor: pointer;
+}
+
+.footerIcons:hover {
+  transform: translateY(-2px);
+}
+

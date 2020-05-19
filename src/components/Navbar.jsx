@@ -14,12 +14,12 @@ toggleCollapse = () => {
 }
 
 render() {
-  const logoStyles = {
-    fontFamily: "Comfortaa",
-    color: "#b2ebf2",
-    // color: "#4db6ac",
-    fontSize: "150%",
-  }
+  // const logoStyles = {
+  //   fontFamily: "Comfortaa",
+  //   color: "#b2ebf2",
+  //   // color: "#4db6ac",
+  //   fontSize: "150%",
+  // }
 
   const icon = {
     paddingRight: "10px"
@@ -36,7 +36,7 @@ render() {
   return (
       <MDBNavbar style={{padding: "0 40px"}} className="navbar navbar-expand-lg" color="unique-color-dark" dark expand="md" fixed="top">
         <MDBNavbarBrand>
-          <div onClick={() => scroll.scrollToTop()} style={logoStyles}>KETOISH GIRL</div>
+          <div onClick={() => scroll.scrollToTop()} className="logoStyles">KETOISH GIRL</div>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
