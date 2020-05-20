@@ -14,12 +14,6 @@ toggleCollapse = () => {
 }
 
 render() {
-  // const logoStyles = {
-  //   fontFamily: "Comfortaa",
-  //   color: "#b2ebf2",
-  //   // color: "#4db6ac",
-  //   fontSize: "150%",
-  // }
 
   const icon = {
     paddingRight: "10px"
@@ -47,7 +41,7 @@ render() {
                   to="myStory"
                   spy={true}
                   smooth={true}
-                  offset={-75}
+                  offset={0}
                   duration= {500}
                   style={navLink}
                 >
@@ -61,7 +55,7 @@ render() {
                   to="ketoBasics"
                   spy={true}
                   smooth={true}
-                  offset={-75}
+                  offset={0}
                   duration= {500}
                   style={navLink}
                 >
@@ -75,7 +69,7 @@ render() {
                   to="resources"
                   spy={true}
                   smooth={true}
-                  offset={-75}
+                  offset={0}
                   duration= {500}
                   style={navLink}
                 >
@@ -89,7 +83,7 @@ render() {
                   to="sportyDivaEvents"
                   spy={true}
                   smooth={true}
-                  offset={-75}
+                  offset={0}
                   duration= {500}
                   style={navLink}
                 >
@@ -103,7 +97,7 @@ render() {
                   to="scheduleAppointment"
                   spy={true}
                   smooth={true}
-                  offset={-75}
+                  offset={0}
                   duration= {500}
                   style={navLink}
                 >
@@ -116,7 +110,7 @@ render() {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-75}
+                offset={0}
                 duration= {500}
                 style={navLink}
               >

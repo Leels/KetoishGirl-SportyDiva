@@ -47,15 +47,15 @@ const lineBreak = {
         </ReactWOW>
       <MDBCol style={{display: "block"}}>
         <div style={introText}>
-        <ReactWOW animation="fadeInUp">
+        <ReactWOW animation="fadeInDown">
         <h1>Hi, I'm Rose!</h1>
         </ReactWOW>
-        <ReactWOW animation="fadeInUp">
+        <ReactWOW animation="fadeInDown">
         <hr  style={lineBreak}/>
         </ReactWOW>
-        <ReactWOW animation="fadeInUp">
-            <h3>Aka, Ketoish Girl. As a Health, Weightloss and Life Coach, my mission is to help you on your journey to being your best self.</h3>
-            <h3>You are born with unique talents, desires, and motivations; I coach to bring those amazing qualities in alignment with your health and life goals.</h3>
+        <ReactWOW animation="fadeInDown">
+            <h3>Aka, Ketoish Girl. As a Health, Weightloss and Life Coach, my mission is to help you on your journey to conquering life.</h3>
+            <h3>You are born with unique talents, desires, and motivations; I coach to bring those amazing qualities in alignment with your goals.</h3>
         </ReactWOW>
         </div>
       </MDBCol>

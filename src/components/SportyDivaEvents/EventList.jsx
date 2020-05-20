@@ -46,12 +46,10 @@ class EventList extends Component {
 
     const underline = {
       fontWeight: "bold",
-      // fontSize: "20px"
     }
 
     const tableHeaders = {
       fontSize: "20px"
-      // paddingTop: "20px"
     }
 
     return (

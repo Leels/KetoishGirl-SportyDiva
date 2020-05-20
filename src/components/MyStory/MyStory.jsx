@@ -13,7 +13,6 @@ function MyStory(){
         </ReactWOW>
         <Text/>
           <MDBRow center>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jjJqrTlOwv8?start=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </MDBRow>
       </div>
     </div>

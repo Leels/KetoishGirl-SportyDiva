@@ -29,6 +29,7 @@ function SportyDivaEvents(){
               </MDBCol>
             <MDBCol size="6" lg="4"> 
                 <ReactWOW animation="fadeInUp">
+                <i class="fas fa-quote-left"/>
                 <p className="quote"><em>"If you run, you are a runner. It doesn't matter how fast or how far. It doesn't matter if today is your first day or if you've been running for twenty years. There is no test to pass, no license to earn, no membership card to get. You just run."</em> - John Bingham</p>
                 </ReactWOW>
             </MDBCol>
