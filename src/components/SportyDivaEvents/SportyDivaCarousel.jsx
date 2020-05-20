@@ -13,14 +13,14 @@ const SportyDivaCarousel = () => {
         showIndicators={true}
         className="z-depth-1"
         slide
-        style={{ width: '50vw', margin: 'auto', marginBottom: '40px'}}
+        style={{ width: '50vw', height: 'auto', margin: 'auto', marginBottom: '40px'}}
       >
         <MDBCarouselInner style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
           <MDBCarouselItem itemId="1">
             <MDBView>
               <img
                 className="d-block w-100"
-                src="https://aktivmotkreft.no/wp-content/uploads/2018/10/l%C3%B8pegruppe4.jpg"
+                src="./running.jpg"
                 alt="First slide"
                 style={{height: '420px', width: 'auto', fit: 'cover'}}
               />
@@ -30,7 +30,7 @@ const SportyDivaCarousel = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src="./HalfMarathon.png"
+                src="./morerunning.jpg"
                 alt="Second slide"
                 style={{height: '420px', width: 'auto', fit: 'cover'}}
               />
@@ -40,7 +40,7 @@ const SportyDivaCarousel = () => {
             <MDBView>
               <img
                 className="d-block w-100"
-                src="https://events.discoverstillwater.com/wp-content/uploads/sites/events.discoverstillwater.com/images/2018/12/event-featured-RunStillwater-1543423138.jpeg"
+                src="HalfMarathon.png"
                 alt="Third slide"
                 style={{height: '420px', width: 'auto', fit: 'cover'}}
               />

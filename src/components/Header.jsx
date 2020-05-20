@@ -54,7 +54,7 @@ const lineBreak = {
         <hr  style={lineBreak}/>
         </ReactWOW>
         <ReactWOW animation="fadeInDown">
-            <h3>Aka, Ketoish Girl. As a Health, Weightloss and Life Coach, my mission is to help you on your journey to conquering life.</h3>
+            <h3>Aka, Ketoish Girl. As a Weightloss and Life Coach, my mission is to help you on your journey to living your best life.</h3>
             <h3>You are born with unique talents, desires, and motivations; I coach to bring those amazing qualities in alignment with your goals.</h3>
         </ReactWOW>
         </div>
