@@ -49,41 +49,49 @@ class EventList extends Component {
       // fontSize: "20px"
     }
 
-    const subTitle = {
-      textAlign: "center",
-      paddingTop: "20px"
+    const tableHeaders = {
+      fontSize: "20px"
+      // paddingTop: "20px"
     }
 
     return (
       <div>
         <ReactWOW animation="fadeInUp">
-          <h3 style={subTitle} className="panel-title">
+          <h3 className="panel-title">
             EVENT LIST
           </h3>
         </ReactWOW>
-        <div className="list">
+        <ReactWOW animation="fadeInUp">
+        <div >
           <div className="panel-body title">
-            <table className="table table-stripe">
+            <table style={{boxShadow: "0px 0px 15px #dfdfdf"}} className="table list table-stripe">
+            <ReactWOW animation="fadeInUp">
               <thead>
-                <tr size="24">
-                  <th>Event</th>
-                  <th>Date</th>
-                  <th>Location</th>
+                <tr>
+                  <th style={tableHeaders}>Event</th>
+                  <th style={tableHeaders}>Mission</th>
+                  <th style={tableHeaders}>Date</th>
+                  <th style={tableHeaders}>Location</th>
                 </tr>
               </thead>
+              </ReactWOW>
               <tbody>
                 {this.state.events.map((event, i) =>
+                <ReactWOW animation="fadeInUp">
                   <tr key={i}>
                     <td><Link to={`/showevent/${event.key}`} style={underline}>{event.name}</Link></td>
+                    <td>{event.mission}</td>
                     <td>{event.date}</td>
                     <td>{event.address}</td>
                   </tr>
+                  </ReactWOW>
                 )}
               </tbody>
             </table>
             <AddEventAccess/>
           </div>
         </div>
+        </ReactWOW>
       </div>
     );
   }

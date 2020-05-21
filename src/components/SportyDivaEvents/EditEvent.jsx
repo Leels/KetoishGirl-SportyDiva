@@ -69,7 +69,8 @@ class EditEvent extends Component {
         course: '',
         schedule: '',
         timing: '',
-        restrooms: ''
+        address: '',
+        restrooms: '',
       });
       this.props.history.push("/ShowEvent/"+this.props.match.params.id)
     })
@@ -83,46 +84,46 @@ class EditEvent extends Component {
       <div class="pageHeight">
         <div class="section panel panel-default">
           <div class="panel-heading">
-            <h1 class="panel-title">
-              Update Event
-            </h1>
+            <h2 class="panel-title">
+              UPDATE EVENT
+            </h2>
           </div>
           <div class="panel-body">
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
                 <label for="name">Sporty Diva Run:</label>
-                <input type="text" class="form-control" name="name" value={this.state.name} onChange={this.onChange} placeholder="Event Name" />
+                <input type="text" class="form-control" name="name" value={this.state.name} onChange={this.onChange}/>
               </div>
               <div class="form-group">
                 <label for="date">Date:</label>
-                <input type="text" class="form-control" name="date" value={this.state.date} onChange={this.onChange} placeholder="Date" />
+                <input type="text" class="form-control" name="date" value={this.state.date} onChange={this.onChange}/>
               </div>
               <div class="form-group">
                 <label for="mission">Pay it Forward Mission:</label>
-                <input type="text" class="form-control" name="mission" value={this.state.mission} onChange={this.onChange} placeholder="Pay it Forward Mission" />
+                <input type="text" class="form-control" name="mission" value={this.state.mission} onChange={this.onChange}/>
               </div>
               <div class="form-group">
                 <label for="course">Course Description:</label>
-                <input type="text" class="form-control" name="course" value={this.state.course} onChange={this.onChange} placeholder="Course Description" />
+                <input type="text" class="form-control" name="course" value={this.state.course} onChange={this.onChange}/>
               </div>
               <div class="form-group">
                 <label for="schedule">Event Day Schedule:</label>
-                <input type="text" class="form-control" name="schedule" value={this.state.schedule} onChange={this.onChange} placeholder="Event Day Schedule" />
+                <input type="text" class="form-control" name="schedule" value={this.state.schedule} onChange={this.onChange}/>
               </div>
               <div class="form-group">
                 <label for="timing">Timing:</label>
-                <input type="text" class="form-control" name="timing" value={this.state.timing} onChange={this.onChange} placeholder="Timing" />
+                <input type="text" class="form-control" name="timing" value={this.state.timing} onChange={this.onChange}/>
               </div>
               <div class="form-group">
                 <label for="address">Location:</label>
-                <input type="text" class="form-control" name="address" value={this.state.address} onChange={this.onChange} placeholder="Event Address" />
+                <input type="text" class="form-control" name="address" value={this.state.address} onChange={this.onChange}/>
               </div>
               <div class="form-group">
                 <label for="restrooms">Restrooms:</label>
-                <input type="text" class="form-control" name="restrooms" value={this.state.restrooms} onChange={this.onChange} placeholder="Restrooms" />
+                <input type="text" class="form-control" name="restrooms" value={this.state.restrooms} onChange={this.onChange}/>
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
-              <h4><Link to="/SportyDivaEvents" class="btn btn-primary">Back to Event List</Link></h4>
+              <h4><Link to="./" class="btn btn-primary">Back to Event List</Link></h4>
             </form>
           </div>
         </div>

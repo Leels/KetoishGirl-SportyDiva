@@ -12,7 +12,7 @@ export function EditButton(){
   if (currentUser) {
   return  (
     <div>
-      <button style={buttonWidth} class="btn btn-success">Edit</button>
+      <button style={buttonWidth} className="btn btn-success">Edit</button>
     </div>
     );
   };
@@ -28,7 +28,7 @@ export function DeleteButton(){
     if (currentUser) {
     return  (
       <div>
-        <button style={buttonWidth} class="btn btn-danger">Delete</button>
+        <button style={buttonWidth} className="btn btn-danger">Delete</button>
       </div>
       );
     };

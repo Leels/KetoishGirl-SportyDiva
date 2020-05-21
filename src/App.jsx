@@ -28,16 +28,16 @@ class App extends Component {
       <Navbar />
       <Route exact path='/' component={LandingPage} />
       <Route path='/adminlogin' component={AdminLogin} />
-      <Route path='/sportydivaevents' component={SportyDivaEvents} />
-      <Route path='/editevent/:id' component={EditEvent} />
+      <PrivateRoute path='/editevent/:id' component={EditEvent} />
       <PrivateRoute path='/createevent' component={CreateEvent} />
       <Route path='/showevent/:id' component={ShowEvent} />
+      {/* <Route path='/sportydivaevents' component={SportyDivaEvents} />
       <Route exact path='/ketobasics' component={KetoBasics} />
       <Route exact path='/mystory' component={MyStory} />
       <Route exact path='/resources' component={Resources} />
       <Route exact path='/scheduleappointment' component={ScheduleAppointment} />
       <Route exact path='/contact' component={ContactForm} />
-      <Route exact path='/photoupload' component={PhotoUpload} />
+      <Route exact path='/photoupload' component={PhotoUpload} /> */}
       </Router>
       <Footer />
       </AuthProvider>

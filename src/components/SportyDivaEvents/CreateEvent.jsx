@@ -67,9 +67,9 @@ class CreateEvent extends Component {
       <div className="pageHeight">
         <div className="section panel panel-default">
           <div className="panel-heading">
-            <h1 className="panel-title">
+            <h2 className="panel-title">
               ADD EVENT
-            </h1>
+            </h2>
           </div>
           <div className="panel-body">
             <form onSubmit={this.onSubmit}>
@@ -110,7 +110,7 @@ class CreateEvent extends Component {
                 <textArea className="form-control" name="registrationLink" onChange={this.onChange} placeholder="https://runsignup.com/" cols="80" rows="3">{registrationLink}</textArea>
               </div>
               <button type="submit" className="btn btn-success">Submit</button>
-              <h4><Link to="/SportyDivaEvents" className="btn btn-primary">Back to Event List</Link></h4>
+              <h4><Link to="/" className="btn btn-primary">Back to Event List</Link></h4>
             </form>
           </div>
         </div>

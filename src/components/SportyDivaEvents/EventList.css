@@ -2,13 +2,12 @@
   background: #e0f7fa;
   -moz-box-shadow: 0 0 0 10px #e0f7fa;
   -webkit-box-shadow: 0 0 0 10px #e0f7fa;
-  box-shadow: 0 0 0 10px #e0f7fa;
+  padding: 10px;
+  font-size: 18px;
+  box-shadow: 0px 0px 15px #dfdfdf;
 }
 
 .list {
   background: rgba(240,244,195);
-  -moz-box-shadow: 0 0 0 10px rgba(240,244,195);
-  -webkit-box-shadow: 0 0 0 10px rgba(240,244,195);
-  box-shadow: 0 0 0 10px rgba(240,244,195);
-  margin-top: 90px;
+  padding: 12px;
 }

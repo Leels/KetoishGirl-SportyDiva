@@ -15,7 +15,7 @@ const SportyDivaCarousel = () => {
         slide
         style={{ width: '50vw', margin: 'auto', marginBottom: '40px'}}
       >
-        <MDBCarouselInner>
+        <MDBCarouselInner style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
           <MDBCarouselItem itemId="1">
             <MDBView>
               <img
