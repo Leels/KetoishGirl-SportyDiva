@@ -16,15 +16,8 @@ const imageStyles = {
   borderRadius: "2px",
 }
 
-// const fastingMethods = {
-//   backgroundColor: "#f3e9d2",
-//   margin: "20px",
-//   padding: "15px",
-//   boxShadow: "0px 0px 15px #dfdfdf"
-// }
-
 const diets = {
-  backgroundColor: "#f3e9d2",
+  backgroundColor: "#FBF8F2",
   margin: "40px",
   padding: "15px",
   boxShadow: "0px 0px 15px #dfdfdf"
@@ -33,11 +26,6 @@ const diets = {
 const questions = {
   textAlign: "center",
   padding: "10px 0"
-}
-
-const subTitle = {
-  padding: "15px 0",
-  // fontWeight: "bold",
 }
 
   return (
@@ -87,25 +75,6 @@ const subTitle = {
               </MDBCol>
               </ReactWOW>
             </MDBRow>
-            {/* <MDBRow>
-            <ReactWOW animation="fadeInUp">
-              <h5 style={subTitle}>Intermittent Fasting</h5>
-              <p>Intermittent fasting (IF) is an eating pattern that cycles between periods of fasting and eating. Common intermittent fasting methods involve daily 16-hour fasts or fasting for 24 hours, twice per week. There are so many ways you can do intermittent fasting but the important thing is to find a pattern that works for you.</p> 
-             </ReactWOW>
-                <ReactWOW animation="fadeInUp">
-                  <div style={fastingMethods}>
-                    <p>Common IF Methods:</p>
-                  <ul>
-                    <li>The Eat-Stop-Eat Method which involves fasting for 24 hours once or twice a week.</li>
-                    <li>The 5:2 Method which permits you to consume 500–600 calories on two non-consecutive days of the week and then eat normally the other 5 days.</li>
-                    <li>The 16/8 Method, also known as the Leangains protocol, which essentially involves skipping breakfast and restricting your daily eating period to 8 hours. For example, you would eat 12 pm to 8 pm and then fast for the 16 hours in between. I personally use this variation but with a 18/6 or 19/5 pattern.</li>
-                  </ul>
-                  </div>
-                </ReactWOW>
-            </MDBRow>
-            <ReactWOW animation="fadeInUp">
-
-            </ReactWOW> */}
           </MDBContainer>
         </div>
       </div>

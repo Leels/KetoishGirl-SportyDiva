@@ -17,6 +17,7 @@ const introText = {
 
 const introImage = {
     diplay: "block",
+    marginTop: "55px",
     height: "100vh",
     width: "auto",
 }

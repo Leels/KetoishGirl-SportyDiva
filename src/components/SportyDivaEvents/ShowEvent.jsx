@@ -134,7 +134,7 @@ class ShowEvent extends Component {
             </div>
             </MDBRow>
             </MDBContainer>
-            <h4 style={back}><Link to="/EventsPage">Back to Event List</Link></h4>
+            <h4 style={back}><Link to="/EventsPage">BACK TO EVENTS</Link></h4>
           </div>
         </div>
       </div>

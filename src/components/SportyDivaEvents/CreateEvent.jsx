@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import ReactDOM from 'react-dom';
 import firebase from '../../Firebase';
 import { Link } from 'react-router-dom';
+import { MDBContainer, MDBRow, MDBCard, MDBCol} from "mdbreact";
 
 class CreateEvent extends Component {
 
@@ -53,7 +54,7 @@ class CreateEvent extends Component {
         restrooms: '',
         registrationLink: '',
       });
-      this.props.history.push("/")
+      this.props.history.push("/EventsPage")
     })
     .catch((error) => {
       console.error("Error adding event: ", error);
@@ -62,6 +63,11 @@ class CreateEvent extends Component {
 
   render() {
     const { name, date, mission, course, schedule, timing, address, restrooms, registrationLink } = this.state;
+
+    const back = {
+      padding: "20px",
+      textAlign: "center",
+    }
 
     return (
       <div className="pageHeight">
@@ -110,7 +116,7 @@ class CreateEvent extends Component {
                 <textArea className="form-control" name="registrationLink" onChange={this.onChange} placeholder="https://runsignup.com/" cols="80" rows="3">{registrationLink}</textArea>
               </div>
               <button type="submit" className="btn btn-success">Submit</button>
-              <h4><Link to="/" className="btn btn-primary">Back to Event List</Link></h4>
+              <h4 style={back}><Link to="/EventsPage">BACK TO EVENTS</Link></h4>
             </form>
           </div>
         </div>

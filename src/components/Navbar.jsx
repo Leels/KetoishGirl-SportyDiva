@@ -32,7 +32,7 @@ let history = useHistory();
   return (
       <MDBNavbar style={{padding: "0 90px"}} className="navbar navbar-expand-lg" color="unique-color-dark" dark expand="md" fixed="top" scrolling>
         <MDBNavbarBrand>
-          <div onClick={() => scroll.scrollToTop()} className="logoStyles">KETOISH GIRL</div>
+          <div onClick={() => history.push("/")} className="logoStyles">KETOISH GIRL</div>
         </MDBNavbarBrand>
         {/* <MDBNavbarToggler onClick={this.toggleCollapse} /> */}
         {/* <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar> */}

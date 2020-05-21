@@ -82,6 +82,12 @@ class EditEvent extends Component {
   }
 
   render() {
+
+    const back = {
+      padding: "20px",
+      textAlign: "center",
+    }
+    
     return (
       <div class="pageHeight">
         <div class="section panel panel-default">
@@ -125,7 +131,7 @@ class EditEvent extends Component {
                 <input type="text" class="form-control" name="restrooms" value={this.state.restrooms} onChange={this.onChange}/>
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
-              <h4><Link to="./" class="btn btn-primary">Back to Event List</Link></h4>
+              <h4 style={back}><Link to="/EventsPage">BACK TO EVENTS</Link></h4>
             </form>
           </div>
         </div>
