@@ -1,5 +1,6 @@
 .pageHeight {
   width: 100vw;
+  /* height: 100vh; */
 }
 
 .section {
@@ -23,11 +24,7 @@ body {
 
 .logoStyles {
   font-family: Comfortaa;
-  /* color: #4db6ac; */
-  /* color: #84ffff; */
-  color: #8bb174 ;
-  /* color: #80deea; */
-  /* color: #F5B895; */
+  color: #88d498 ;
   font-size: 150%;
   font-weight: 700;
 }
@@ -55,6 +52,8 @@ p {
 .buttonColors {
   text-align: center;
   color: #1c2331;
+  text-decoration: underline;
+  padding-top: 15px;
 }
 
 .buttonColors:hover {
