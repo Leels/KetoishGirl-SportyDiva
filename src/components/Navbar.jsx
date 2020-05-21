@@ -1,19 +1,21 @@
 
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import styled, { css } from 'styled-components';
+import { useHistory } from "react-router-dom";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBIcon } from "mdbreact";
 
-class Navbar extends Component {
-state = {
-  isOpen: false
-};
+const Navbar = () => {
+// state = {
+//   isOpen: false
+// };
 
-toggleCollapse = () => {
-  this.setState({ isOpen: !this.state.isOpen });
-}
+// toggleCollapse = () => {
+//   this.setState({ isOpen: !this.state.isOpen });
+// }
 
-render() {
+
+// render() {
+let history = useHistory();
 
   const icon = {
     paddingRight: "10px"
@@ -28,15 +30,16 @@ render() {
   }
 
   return (
-      <MDBNavbar style={{padding: "0 90px"}} className="navbar navbar-expand-lg" color="unique-color-dark" dark expand="md" fixed="top" transparent scrolling>
+      <MDBNavbar style={{padding: "0 90px"}} className="navbar navbar-expand-lg" color="unique-color-dark" dark expand="md" fixed="top" scrolling>
         <MDBNavbarBrand>
           <div onClick={() => scroll.scrollToTop()} className="logoStyles">KETOISH GIRL</div>
         </MDBNavbarBrand>
-        <MDBNavbarToggler onClick={this.toggleCollapse} />
-        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+        {/* <MDBNavbarToggler onClick={this.toggleCollapse} /> */}
+        {/* <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar> */}
           <MDBNavbarNav center>
             <MDBNavItem style={navItem}>
                 <Link
+                  onClick={() => history.push("/")}
                   activeClass="active"
                   to="myStory"
                   spy={true}
@@ -51,6 +54,7 @@ render() {
             </MDBNavItem>
             <MDBNavItem style={navItem}>
                 <Link
+                  onClick={() => history.push("/")}
                   activeClass="active"
                   to="ketoBasics"
                   spy={true}
@@ -63,22 +67,9 @@ render() {
                 </Link>
               
             </MDBNavItem>
-            {/* <MDBNavItem style={navItem}>
-                <Link
-                  activeClass="active"
-                  to="resources"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration= {500}
-                  style={navLink}
-                >
-                  RESOURCES
-                </Link>
-              
-            </MDBNavItem> */}
             <MDBNavItem style={navItem}>
               <Link
+                  onClick={() => history.push("/")}
                   activeClass="active"
                   to="sportyDivaEvents"
                   spy={true}
@@ -93,6 +84,7 @@ render() {
             </MDBNavItem>
             <MDBNavItem style={navItem}>
                 <Link
+                  onClick={() => history.push("/")}
                   activeClass="active"
                   to="scheduleAppointment"
                   spy={true}
@@ -106,6 +98,7 @@ render() {
             </MDBNavItem>
             <MDBNavItem style={navItem}>
              <Link
+                onClick={() => history.push("/")}
                 activeClass="active"
                 to="contact"
                 spy={true}
@@ -119,10 +112,10 @@ render() {
                </Link>  
             </MDBNavItem>
           </MDBNavbarNav>
-        </MDBCollapse>
+        {/* </MDBCollapse> */}
       </MDBNavbar>
     );
   }
-}
+// }
 
 export default Navbar;

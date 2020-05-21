@@ -16,7 +16,9 @@ import PhotoUpload from './components/SportyDivaEvents/PhotoUpload';
 import "./App.css"
 import AuthProvider from './Auth';
 import PrivateRoute from './components/PrivateRoute';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Router, Route } from 'react-router-dom';
+import history from './history';
 
 
 class App extends Component {
@@ -24,7 +26,7 @@ class App extends Component {
     return (
       <div>
       <AuthProvider>
-      <Router>
+      <Router history={history}>
       <Navbar />
       <Route exact path='/' component={LandingPage} />
       <Route path='/adminlogin' component={AdminLogin} />
