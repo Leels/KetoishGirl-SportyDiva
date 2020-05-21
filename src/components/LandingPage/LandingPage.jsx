@@ -15,12 +15,10 @@ function LandingPage(){
     <div >
       <div >
         <Header/>
-        {/* <Quote/> */}
         <MyStory/>
+        <ScheduleAppointment/>
         <KetoBasics/>
         <SportyDivaEvents/>
-        <ScheduleAppointment/>
-        {/* <SocialMedia/> */}
         <ContactForm/>
       </div>
     </div>

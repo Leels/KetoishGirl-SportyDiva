@@ -5,12 +5,7 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 function Header(){
 
 const intro = {  
-//   backgroundColor: "#e6ee9c",
-//   backgroundColor: "#006064",
-//   backgroundColor: "#00838f",
   backgroundColor: "#074c60",
-//   backgroundColor: "#1D4E89",
-//   backgroundColor: "#00796b",
 }
 
 const introText = {
@@ -27,12 +22,9 @@ const introImage = {
 }
 
 const lineBreak = {
-    // color: '#84ffff',
-    // backgroundColor: '#84ffff',
-    // borderColor : '#84ffff',
-    color: '#8bb174',
-    backgroundColor: '#8bb174 ',
-    borderColor : '#8bb174 ',
+    color: '#88d498',
+    backgroundColor: '#88d498 ',
+    borderColor : '#88d498 ',
     height: .5,
     width: "360px" 
 }

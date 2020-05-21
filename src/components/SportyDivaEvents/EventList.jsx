@@ -40,6 +40,7 @@ class EventList extends Component {
 
   componentDidMount() {
     this.unsubscribe = this.ref.onSnapshot(this.onCollectionUpdate);
+    document.body.scrollTop = 0;
   }
 
   render() {
@@ -75,14 +76,12 @@ class EventList extends Component {
               </ReactWOW>
               <tbody>
                 {this.state.events.map((event, i) =>
-                <ReactWOW animation="fadeInUp">
                   <tr key={i}>
                     <td><Link to={`/showevent/${event.key}`} style={underline}>{event.name}</Link></td>
                     <td>{event.mission}</td>
                     <td>{event.date}</td>
                     <td>{event.address}</td>
                   </tr>
-                  </ReactWOW>
                 )}
               </tbody>
             </table>

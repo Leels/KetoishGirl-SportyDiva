@@ -29,7 +29,7 @@ function SportyDivaEvents(){
   }
 
   return (
-      <div id="sportyDivaEvents" className="pageHeight">
+      <div id="sportyDivaEvents" className="pageHeight" style={{backgroundColor: "#FBF8F2"}}>
         <div className="panel panel-default section">
             <ReactWOW animation="fadeInUp">
           <div className="panel-heading">
@@ -40,7 +40,7 @@ function SportyDivaEvents(){
           </ReactWOW>
           <MDBContainer>
             <MDBRow center middle>
-              <MDBCol size="12" sm="6" lg="12">
+              <MDBCol size="12" sm="6" lg="10">
                 <ReactWOW animation="fadeInUp">
                   <p>In 2007 I established Sporty Diva LLC to reach folks with my personal story and to help motivate people to pursue a healthier and active lifestyle. I promote health and wellness thru a variety of events such as Ladies Night Out, Walking/Running Events, Workshops, Personal Training, Motivational Speaking and Boot Camps.</p>
                 </ReactWOW>
@@ -50,7 +50,7 @@ function SportyDivaEvents(){
               <MDBCol size="12" sm="6" lg="8">
                 <ReactWOW animation="fadeInUp">
                   <div style={testimonialWrapper}>
-                <p className="quote">
+                <p className="quote" style={{backgroundColor: "#fff"}}>
                 <i class="fas fa-quote-left"/>
                 <em> Rose's fitness events have always been a fun way to socialize and get fit in a low pressure setting. She puts a lot of care into each event. I especially like to attend the walk/run events, the goody bags are such a sweet little touch!"</em></p>
                 <img style={testimonialPhoto} src="anita.png" alt="" />

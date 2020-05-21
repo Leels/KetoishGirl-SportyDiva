@@ -14,6 +14,7 @@ class EditEvent extends Component {
       course: '',
       schedule: '',
       timing: '',
+      address: '',
       restrooms: ''
     };
   }
@@ -31,6 +32,7 @@ class EditEvent extends Component {
           course: event.course,
           schedule: event.schedule,
           timing: event.timing,
+          address: event.address,
           restrooms: event.restrooms
         });
       } else {

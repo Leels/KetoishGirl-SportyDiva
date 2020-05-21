@@ -24,8 +24,7 @@ const imageStyles = {
 // }
 
 const diets = {
-  backgroundColor: "#074c60",
-  color: "#fff",
+  backgroundColor: "#f3e9d2",
   margin: "40px",
   padding: "15px",
   boxShadow: "0px 0px 15px #dfdfdf"

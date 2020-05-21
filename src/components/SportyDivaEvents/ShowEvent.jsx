@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import firebase from '../../Firebase';
 import { Link } from 'react-router-dom';
-import ReactWOW from 'react-wow';
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCard, MDBCol} from "mdbreact";
 import { EditButton, DeleteButton } from './AdminButtons';
 
 class ShowEvent extends Component {
@@ -16,6 +15,7 @@ class ShowEvent extends Component {
   }
 
   componentDidMount() {
+    document.body.scrollTop = 0;
     const ref = firebase.firestore().collection('events').doc(this.props.match.params.id);
     ref.get().then((doc) => {
       if (doc.exists) {
@@ -33,7 +33,7 @@ class ShowEvent extends Component {
   delete(id){
     firebase.firestore().collection('events').doc(id).delete().then(() => {
       console.log("Document successfully deleted!");
-      this.props.history.push("/")
+      this.props.history.push("/EventsPage")
     }).catch((error) => {
       console.error("Error removing document: ", error);
     });
@@ -47,24 +47,17 @@ class ShowEvent extends Component {
     }
 
     const colorLime = {
-      backgroundColor: "#c6dabf",
-      margin: "1px 0",
-      padding: "10px",
-      // boxShadow: "0px 0px 15px #dfdfdf",
-      // fontSize: "110%"
+      backgroundColor: "#FBF8F2",
+      padding: "15px",
     }
 
     const colorGrey = {
-      backgroundColor: "#f3e9d2",
-      margin: "1px 0",
-      padding: "10px",
-      // boxShadow: "0px 0px 15px #dfdfdf",
-      // fontSize: "110%"
+      backgroundColor: "#fff",
+      padding: "15px",
     }
 
     const title = {
       paddingBottom: "10px",
-      // textDecoration: "underline",
     }
 
     const center = {
@@ -76,27 +69,29 @@ class ShowEvent extends Component {
       margin: "40px auto 20px auto"
     }
 
+    const cardStyles = {
+      border: "1px solid #dfdfdf",
+      borderRadius: "2px",
+      boxShadow: "0px 0px 15px #dfdfdf",
+    }
+
     return (
       <div class="pageHeight">
         <div class="section panel panel-default">
           <div class="panel-heading">
-          <ReactWOW animation="fadeInUp">
           <h2 style={newMargins}>SPORTY DIVA</h2>
-          </ReactWOW>
-          <ReactWOW animation="fadeInUp">
             <h3 style={newMargins} class="panel-title">
               {this.state.event.name}
             </h3>
-            </ReactWOW>
         </div>
-        <ReactWOW animation="fadeInUp">
           <a href={this.state.event.registrationLink}>
           <button style={center} className="btn btn-primary">Register here!</button>
           </a>
-        </ReactWOW>
-        <ReactWOW animation="fadeInUp">
           <div class="panel-body">
-            <dl style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
+          <MDBRow center>
+          <MDBCol size="12" sm="6" lg="10">
+            <dl>
+          <MDBCard style={cardStyles}>
             <div style={colorLime}>
             <dt style={title}>DATE</dt>
             <dd>{this.state.event.date}</dd>
@@ -125,9 +120,12 @@ class ShowEvent extends Component {
               <dt style={title}>RESTROOMS</dt>
               <dd>{this.state.event.restrooms}</dd>
               </div>
+            </MDBCard>
             </dl>
+            </MDBCol>
+            </MDBRow>
             <MDBContainer>
-              <MDBRow>
+              <MDBRow style={{marginLeft: "72px"}}>
             <Link to={`/editevent/${this.state.key}`}>
             <EditButton/>
             </Link>
@@ -138,7 +136,6 @@ class ShowEvent extends Component {
             </MDBContainer>
             <h4 style={back}><Link to="/EventsPage">Back to Event List</Link></h4>
           </div>
-        </ReactWOW>
         </div>
       </div>
     );

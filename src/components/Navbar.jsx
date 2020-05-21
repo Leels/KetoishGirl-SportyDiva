@@ -50,7 +50,20 @@ let history = useHistory();
                 >
                   MY STORY
                 </Link>
-                {/* <MDBNavLink to="/" >TEST</MDBNavLink> */}
+            </MDBNavItem>
+            <MDBNavItem style={navItem}>
+                <Link
+                  onClick={() => history.push("/")}
+                  activeClass="active"
+                  to="scheduleAppointment"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration= {500}
+                  style={navLink}
+                >
+                  SERVICES
+                </Link>
             </MDBNavItem>
             <MDBNavItem style={navItem}>
                 <Link
@@ -65,7 +78,6 @@ let history = useHistory();
                 >
                   KETO BASICS
                 </Link>
-              
             </MDBNavItem>
             <MDBNavItem style={navItem}>
               <Link
@@ -79,21 +91,6 @@ let history = useHistory();
                   style={navLink}
                 >
                   EVENTS
-                </Link>
-              
-            </MDBNavItem>
-            <MDBNavItem style={navItem}>
-                <Link
-                  onClick={() => history.push("/")}
-                  activeClass="active"
-                  to="scheduleAppointment"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration= {500}
-                  style={navLink}
-                >
-                  APPOINTMENTS
                 </Link>
             </MDBNavItem>
             <MDBNavItem style={navItem}>
