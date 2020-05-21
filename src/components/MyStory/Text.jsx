@@ -6,7 +6,7 @@ function Text(){
 
   return (
     <div>
-      <div style={{columnount: "3"}}>
+      <div style={{columnMount: "3"}}>
         <ReactWOW animation="fadeInUp">
         <p>
           When I was a teenager, my weight fluctuated between 180 and 190 pounds while I alternated between starving myself and binging. As a child I was always thin but I would overeat and not gain any weight. I ate just because -- whether I was sad, happy, angry, stressed or bored. By the time I was 20, I was married and had a daughter. My weight had soared to 300 pounds during my pregnancy and remained there until March 2002. After I had my daughter, I began exercising regularly; little did I know that my passion for fitness would begin even though I couldn't get my emotional/compulsive eating under control. Exercise became a form of therapy and I immediately started to feel better.</p>

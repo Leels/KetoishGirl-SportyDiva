@@ -8,17 +8,16 @@ const intro = {
 //   backgroundColor: "#e6ee9c",
 //   backgroundColor: "#006064",
 //   backgroundColor: "#00838f",
-  backgroundColor: "#006064",
+  backgroundColor: "#114b5f",
 //   backgroundColor: "#1D4E89",
 //   backgroundColor: "#00796b",
 }
 
 const introText = {
-    color: "#e0f7fa",
+    color: "#fff",
     height: "100vh",
     padding: "18vh 90px",
     verticalAlign: "middle",
-    // fontFamily: "Comfortaa"
 }
 
 const introImage = {
@@ -31,9 +30,9 @@ const lineBreak = {
     // color: '#84ffff',
     // backgroundColor: '#84ffff',
     // borderColor : '#84ffff',
-    color: '#e6ee9c',
-    backgroundColor: '#e6ee9c',
-    borderColor : '#e6ee9c',
+    color: '#88d498 ',
+    backgroundColor: '#88d498 ',
+    borderColor : '#88d498 ',
     height: .5,
     width: "360px" 
 }

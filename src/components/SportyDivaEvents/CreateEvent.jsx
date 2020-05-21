@@ -40,7 +40,7 @@ class CreateEvent extends Component {
       timing,
       address,
       restrooms,
-      registrationLink
+      registrationLink,
     }).then((docRef) => {
       this.setState({
         name: '',
@@ -51,7 +51,7 @@ class CreateEvent extends Component {
         timing: '',
         address: '',
         restrooms: '',
-        registrationLink: ''
+        registrationLink: '',
       });
       this.props.history.push("/")
     })

@@ -47,7 +47,7 @@ class ShowEvent extends Component {
     }
 
     const colorLime = {
-      backgroundColor: "#F0F4C3",
+      backgroundColor: "#c6dabf",
       margin: "1px 0",
       padding: "10px",
       // boxShadow: "0px 0px 15px #dfdfdf",
@@ -55,7 +55,7 @@ class ShowEvent extends Component {
     }
 
     const colorGrey = {
-      backgroundColor: "#eceff1",
+      backgroundColor: "#f3e9d2",
       margin: "1px 0",
       padding: "10px",
       // boxShadow: "0px 0px 15px #dfdfdf",
@@ -64,7 +64,7 @@ class ShowEvent extends Component {
 
     const title = {
       paddingBottom: "10px",
-      textDecoration: "underline",
+      // textDecoration: "underline",
     }
 
     const center = {
@@ -98,31 +98,31 @@ class ShowEvent extends Component {
           <div class="panel-body">
             <dl style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
             <div style={colorLime}>
-            <dt style={title}>Date</dt>
+            <dt style={title}>DATE</dt>
             <dd>{this.state.event.date}</dd>
             </div>
             <div style={colorGrey}>
-              <dt style={title}>Pay it Forward Mission</dt>
+              <dt style={title}>PAY IT FORWARD MISSION</dt>
               <dd>{this.state.event.mission}</dd>
               </div>
               <div style={colorLime}>
-              <dt style={title}>Course Description</dt>
+              <dt style={title}>COURSE DESCRIPTION</dt>
               <dd>{this.state.event.course}</dd>
               </div>
               <div style={colorGrey}>
-              <dt style={title}>Event Day Schedule</dt>
+              <dt style={title}>EVENT DAY SCHEDULE</dt>
               <dd>{this.state.event.schedule}</dd>
               </div>
               <div style={colorLime}>
-              <dt style={title}>Timing</dt>
+              <dt style={title}>TIMING</dt>
               <dd>{this.state.event.timing}</dd>
               </div>
               <div style={colorGrey}>
-              <dt style={title}>Location</dt>
+              <dt style={title}>LOCATION</dt>
               <dd>{this.state.event.address}</dd>
               </div>
               <div style={colorLime}>
-              <dt style={title}>Restrooms</dt>
+              <dt style={title}>RESTROOMS</dt>
               <dd>{this.state.event.restrooms}</dd>
               </div>
             </dl>
@@ -136,7 +136,7 @@ class ShowEvent extends Component {
             </div>
             </MDBRow>
             </MDBContainer>
-            <h4 style={back}><Link to="/SportyDivaEvents">Back to Event List</Link></h4>
+            <h4 style={back}><Link to="/EventsPage">Back to Event List</Link></h4>
           </div>
         </ReactWOW>
         </div>

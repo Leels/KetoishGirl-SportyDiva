@@ -87,7 +87,7 @@ render() {
                   duration= {500}
                   style={navLink}
                 >
-                  SPORTY DIVA EVENTS
+                  EVENTS
                 </Link>
               
             </MDBNavItem>

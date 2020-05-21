@@ -37,8 +37,8 @@ const certs = {
               <a href="https://www.instagram.com/theketoishgirl/" className="ins-ic">
                 <i className="fab fa-instagram fa-lg white-text ml-md-4 mr-md-4  mr-3 fa-2x clickMe"/>
               </a>
-              <a href="./Contact">
-                <i className="fa fa-envelope white-text ml-md-4 mr-md-4  mr-3 fa-2x clickMe" />
+              <a href="https://mail.google.com/" className="gplus-ic mr-3">
+                <i style={{color: "#1c2331"}} className="fab fa-google-plus white-text ml-md-4 mr-md-4  mr-3 fa-2x clickMe" />
               </a>
             </div>
           </MDBCol>

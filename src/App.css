@@ -24,7 +24,8 @@ body {
 .logoStyles {
   font-family: Comfortaa;
   /* color: #4db6ac; */
-  color: #84ffff;
+  /* color: #84ffff; */
+  color: #88d498 ;
   /* color: #80deea; */
   /* color: #F5B895; */
   font-size: 150%;
@@ -44,5 +45,19 @@ body {
   background: #e0f7fa;
   -moz-box-shadow: 0 0 0 10px #dfdfdf;
   -webkit-box-shadow: 0 0 0 10px #dfdfdf;
-  box-shadow: 0px 0px 15px red;
+  box-shadow: 0px 0px 15px #dfdfdf;
+}
+
+p {
+  font-size: 20px;
+}
+
+.buttonColors {
+  color: #114b5f;
+  text-align: center;
+}
+
+.buttonColors:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
 }

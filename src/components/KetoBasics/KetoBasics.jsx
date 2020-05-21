@@ -17,14 +17,14 @@ const imageStyles = {
 }
 
 const fastingMethods = {
-  backgroundColor: "rgba(240,244,195)",
+  backgroundColor: "#f3e9d2",
   margin: "20px",
   padding: "15px",
   boxShadow: "0px 0px 15px #dfdfdf"
 }
 
 const diets = {
-  backgroundColor: "#e0f7fa",
+  backgroundColor: "#f3e9d2",
   margin: "40px",
   padding: "15px",
   boxShadow: "0px 0px 15px #dfdfdf"
@@ -107,6 +107,9 @@ const subTitle = {
                   </div>
                 </ReactWOW>
             </MDBRow>
+            <ReactWOW animation="fadeInUp">
+
+            </ReactWOW>
           </MDBContainer>
         </div>
       </div>

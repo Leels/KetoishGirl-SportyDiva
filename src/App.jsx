@@ -5,7 +5,7 @@ import KetoBasics from './components/KetoBasics/KetoBasics';
 import MyStory from './components/MyStory/MyStory';
 import Resources from './components/Resources/Resources';
 import ScheduleAppointment from './components/ScheduleAppointment/ScheduleAppointment';
-import SportyDivaEvents from './components/SportyDivaEvents/SportyDivaEvents';
+import EventsPage from './components/SportyDivaEvents/EventsPage';
 import Footer from './components/Footer';
 import EditEvent from './components/SportyDivaEvents/EditEvent';
 import CreateEvent from './components/SportyDivaEvents/CreateEvent';
@@ -31,13 +31,13 @@ class App extends Component {
       <PrivateRoute path='/editevent/:id' component={EditEvent} />
       <PrivateRoute path='/createevent' component={CreateEvent} />
       <Route path='/showevent/:id' component={ShowEvent} />
-      {/* <Route path='/sportydivaevents' component={SportyDivaEvents} />
-      <Route exact path='/ketobasics' component={KetoBasics} />
+      <Route path='/eventspage' component={EventsPage} />
+      {/* <Route exact path='/ketobasics' component={KetoBasics} />
       <Route exact path='/mystory' component={MyStory} />
       <Route exact path='/resources' component={Resources} />
       <Route exact path='/scheduleappointment' component={ScheduleAppointment} />
-      <Route exact path='/contact' component={ContactForm} />
-      <Route exact path='/photoupload' component={PhotoUpload} /> */}
+      <Route exact path='/contact' component={ContactForm} /> */}
+      <Route exact path='/photoupload' component={PhotoUpload} />
       </Router>
       <Footer />
       </AuthProvider>
