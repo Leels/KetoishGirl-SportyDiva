@@ -42,7 +42,7 @@ function SportyDivaEvents(){
             <MDBRow center middle>
               <MDBCol size="12" sm="6" lg="12">
                 <ReactWOW animation="fadeInUp">
-                  <p>In 2007 I established Sporty Diva LLC to reach folks with my personal story and to help motivate people to pursue a healthier and active lifestyle. I promote health and wellness thru a variety of events such as Ladies Night Out, Walking/Running Events, Workshops, Personal Training, Motivational Speaking and Boot Camps. I am completely on fire for running and fitness because even though we are each on our own journey and responsible for our own health and well-being, we are all in this life together.</p>
+                  <p>In 2007 I established Sporty Diva LLC to reach folks with my personal story and to help motivate people to pursue a healthier and active lifestyle. I promote health and wellness thru a variety of events such as Ladies Night Out, Walking/Running Events, Workshops, Personal Training, Motivational Speaking and Boot Camps.</p>
                 </ReactWOW>
               </MDBCol>
             </MDBRow>

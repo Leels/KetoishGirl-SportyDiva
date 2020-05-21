@@ -46,11 +46,9 @@ class ContactForm extends Component {
     const { name, email, subject, message } = this.state;
 
     const logoStyles = {
-      fontFamily: "Comfortaa",
-      color: "#88d498",
-      fontWeight: "900",
-      // color: "#4db6ac",
-      // color: "#84ffff",
+      // fontFamily: "Comfortaa",
+      // color: "#8bb174",
+      // fontWeight: "900",
     }
 
     return (

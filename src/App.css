@@ -25,7 +25,7 @@ body {
   font-family: Comfortaa;
   /* color: #4db6ac; */
   /* color: #84ffff; */
-  color: #88d498 ;
+  color: #8bb174 ;
   /* color: #80deea; */
   /* color: #F5B895; */
   font-size: 150%;
@@ -53,8 +53,8 @@ p {
 }
 
 .buttonColors {
-  color: #114b5f;
   text-align: center;
+  color: #1c2331;
 }
 
 .buttonColors:hover {

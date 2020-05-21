@@ -35,9 +35,9 @@ function ScheduleAppointment(){
           <h2>APPOINTMENTS & SERVICES</h2>
         </ReactWOW>
         <MDBCol size="12" sm="6" lg="12">
-        <ReactWOW animation="fadeInUp">
+        {/* <ReactWOW animation="fadeInUp">
         <p>My mission is to help women heal from binging and compulsively overeating and empower them so that they can empower themselves. I believe we all have the answers to the questions about our lives within each of us. In regards to health I've combined the principles of the Ketogenic Diet, Intermittent Fasting and High Fat Low Carb (HFLC) to develop a healthier approach to nutrition.</p>
-        </ReactWOW>
+        </ReactWOW> */}
         <ReactWOW animation="fadeInUp">
         <img style={officeImageStyles} src="./roseoffice.png" className="float-left" alt="..."/>
         <p>As a Certified Life and Weight Coach I work to help women who struggle with helping themselves. I help clients get to the ‘root cause’ of their problems by working on the source of the symptoms instead of simlpy using a band-aid approach. A band-aid simply will not work because the underlying symptoms are still there and will keep showing up. So why not get to the core issue of the problem... work through it…  and move on instead of dealing with the same problem over and over again?</p>

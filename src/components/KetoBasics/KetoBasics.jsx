@@ -8,7 +8,7 @@ function KetoBasics(){
 
 const imageStyles = {
   objectFit: "cover",
-  height: "310px",
+  height: "270px",
   width: "auto",
   float: "right",
   margin: "0 0 0 15px",
@@ -16,15 +16,16 @@ const imageStyles = {
   borderRadius: "2px",
 }
 
-const fastingMethods = {
-  backgroundColor: "#f3e9d2",
-  margin: "20px",
-  padding: "15px",
-  boxShadow: "0px 0px 15px #dfdfdf"
-}
+// const fastingMethods = {
+//   backgroundColor: "#f3e9d2",
+//   margin: "20px",
+//   padding: "15px",
+//   boxShadow: "0px 0px 15px #dfdfdf"
+// }
 
 const diets = {
-  backgroundColor: "#f3e9d2",
+  backgroundColor: "#074c60",
+  color: "#fff",
   margin: "40px",
   padding: "15px",
   boxShadow: "0px 0px 15px #dfdfdf"
@@ -46,17 +47,13 @@ const subTitle = {
           <ReactWOW animation="fadeInUp">
             <h2>KETO BASICS</h2>
           </ReactWOW>
-          <ReactWOW>
-            <h3>Keto Diet, Intermittent Fasting and HFLC 101</h3>
-          </ReactWOW>
           <MDBContainer>
             <MDBRow>
-              <MDBCol style={{backgroundColor: "white"}} size="12" md="12">
+              <MDBCol style={{backgroundColor: "white"}} size="10" md="12">
               <ReactWOW animation="fadeInUp">
                 <img style={imageStyles} src="breakfast.jpg" alt="" />
               </ReactWOW>
               <ReactWOW animation="fadeInUp">
-                <h5 style={subTitle}>Keto Diet</h5>
                 <p>The ketogenic diet is an extremely low-carb, high-fat diet. It involves drastically reducing carbohydrate intake and replacing it with fat. This reduction in carbs puts your body into a metabolic state called ketosis.</p>
                 <p>The ketogenic diet was founded in the 1920’s when doctors started using it to control seizures in patients with epilepsy. It began with a nutritional plan made of low carbohydrates, fat, and protein. With low glycogen stores, the body has to use fat instead of carbohydrates for energy. Nicknamed ketosis, this process makes two acids in the blood, ketones and decanoic acid, that our bodies and brains use for fuel. This diet has been effective for raising energy levels, lowering weight, and increasing quality of life.</p>
               </ReactWOW>
@@ -91,7 +88,7 @@ const subTitle = {
               </MDBCol>
               </ReactWOW>
             </MDBRow>
-            <MDBRow>
+            {/* <MDBRow>
             <ReactWOW animation="fadeInUp">
               <h5 style={subTitle}>Intermittent Fasting</h5>
               <p>Intermittent fasting (IF) is an eating pattern that cycles between periods of fasting and eating. Common intermittent fasting methods involve daily 16-hour fasts or fasting for 24 hours, twice per week. There are so many ways you can do intermittent fasting but the important thing is to find a pattern that works for you.</p> 
@@ -109,7 +106,7 @@ const subTitle = {
             </MDBRow>
             <ReactWOW animation="fadeInUp">
 
-            </ReactWOW>
+            </ReactWOW> */}
           </MDBContainer>
         </div>
       </div>
