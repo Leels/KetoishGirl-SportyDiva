@@ -47,10 +47,8 @@ class ContactForm extends Component {
 
     const logoStyles = {
       fontFamily: "Comfortaa",
-      color: "#80deea",
+      color: "#88d498",
       fontWeight: "900",
-      // color: "#4db6ac",
-      // color: "#84ffff",
     }
 
     return (

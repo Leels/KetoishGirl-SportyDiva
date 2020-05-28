@@ -1,15 +1,11 @@
 .pageHeight {
-  min-height: 100vh;
   width: 100vw;
-  /* margin-top: 55px; */
-  /* overflow: hidden; */
-  /* display: block; */
-  /* position: relative; */
+  /* height: 100vh; */
 }
 
 .section {
-  padding: 40px 90px 80px 90px;
-  margin: 0 90px;
+  padding: 40px 90px;
+  margin: 40px 90px;
 }
 
 h1, h2, h3, h4 {
@@ -28,10 +24,7 @@ body {
 
 .logoStyles {
   font-family: Comfortaa;
-  /* color: #4db6ac; */
-  color: #84ffff;
-  /* color: #80deea; */
-  /* color: #F5B895; */
+  color: #88d498 ;
   font-size: 150%;
   font-weight: 700;
 }
@@ -40,13 +33,30 @@ body {
     cursor: pointer;
 }
 
-.footerIcons:hover {
-  transform: translateY(-2px);
+.clickMe:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
 }
 
-a.fb-ic {
-  margin: 0 !important;
-  padding: 0 !important;
+.boxShadow {
+  background: #e0f7fa;
+  -moz-box-shadow: 0 0 0 10px #dfdfdf;
+  -webkit-box-shadow: 0 0 0 10px #dfdfdf;
+  box-shadow: 0px 0px 15px #dfdfdf;
 }
 
+p {
+  font-size: 20px;
+}
 
+.buttonColors {
+  text-align: center;
+  color: #1c2331;
+  text-decoration: underline;
+  padding-top: 15px;
+}
+
+.buttonColors:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}

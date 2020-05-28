@@ -11,7 +11,7 @@ function AddEventAccess(){
   if (currentUser) {
   return  (
     <div>
-    <h4 align="center"><Link to="/createevent">+ Add Event</Link></h4>
+    <h4 align="center"><Link to="/createevent">+ ADD EVENT</Link></h4>
     </div>
   );
   };

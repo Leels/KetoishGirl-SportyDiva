@@ -1,7 +1,9 @@
 import React from "react";
 import MyStory from "../MyStory/MyStory";
+import Quote from "../Quote";
 import KetoBasics from "../KetoBasics/KetoBasics";
 import Header from "../Header";
+import SocialMedia from "../SocialMedia";
 import SportyDivaEvents from "../SportyDivaEvents/SportyDivaEvents";
 import ScheduleAppointment from '../ScheduleAppointment/ScheduleAppointment';
 import ContactForm from "../Contact/ContactForm";
@@ -14,9 +16,9 @@ function LandingPage(){
       <div >
         <Header/>
         <MyStory/>
+        <ScheduleAppointment/>
         <KetoBasics/>
         <SportyDivaEvents/>
-        <ScheduleAppointment/>
         <ContactForm/>
       </div>
     </div>

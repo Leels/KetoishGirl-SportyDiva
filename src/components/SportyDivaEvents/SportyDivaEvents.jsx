@@ -8,8 +8,28 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 function SportyDivaEvents(){
 
+  const testimonialPhoto = {
+  objectFit: "cover",
+  marginRight: "16px",
+  borderRadius: "50%",
+  width: "75px",
+  }
+
+  const author = {
+  display: "inline-block",
+  margin: "20px 0 0 0",
+  fontSize: "1.3rem",
+  fontWeight: "600",
+  letterSpacing: "normal",
+  }
+
+  const testimonialWrapper = {
+  marginTop: "16px",
+  textAlign: "center",
+  }
+
   return (
-      <div id="sportyDivaEvents" className="pageHeight">
+      <div id="sportyDivaEvents" className="pageHeight" style={{backgroundColor: "#FBF8F2"}}>
         <div className="panel panel-default section">
             <ReactWOW animation="fadeInUp">
           <div className="panel-heading">
@@ -18,24 +38,33 @@ function SportyDivaEvents(){
             </h2>
           </div>
           </ReactWOW>
-          <SportyDivaCarousel />
           <MDBContainer>
             <MDBRow center middle>
-              <MDBCol size="12" sm="6" lg="6">
+              <MDBCol size="12" sm="6" lg="10">
                 <ReactWOW animation="fadeInUp">
-                  <p><strong>Sporty Diva Run/Walk Events </strong>are designed to encourage, motivate and inspire the first time athlete or those returning to fitness in a fun, friendly and supportive noncompetitive race environment. All fitness levels are welcome to participate, we have no time limits for our races. This is your day!</p>
-                  <p>Each participant will receive a Sporty Diva goody-bag and a finisher's medal for each event. Snacks like trail mix, red vines, chips, cookies, candy, soda, water and juice will be available at the start/finish line. All participants' finishing times will be recorded and posted online three days after the event.</p>
+                  <p>In 2007 I established Sporty Diva LLC to reach folks with my personal story and to help motivate people to pursue a healthier and active lifestyle. I promote health and wellness thru a variety of events such as Ladies Night Out, Walking/Running Events, Workshops, Personal Training, Motivational Speaking and Boot Camps.</p>
                 </ReactWOW>
               </MDBCol>
-            <MDBCol size="6" lg="4"> 
-                <ReactWOW animation="fadeInUp">
-                <p className="quote"><em>"If you run, you are a runner. It doesn't matter how fast or how far. It doesn't matter if today is your first day or if you've been running for twenty years. There is no test to pass, no license to earn, no membership card to get. You just run."</em> - John Bingham</p>
-                </ReactWOW>
-            </MDBCol>
             </MDBRow>
-            </MDBContainer>
-          <RunLocations />
-          <EventList/>
+            <MDBRow center middle>
+              <MDBCol size="12" sm="6" lg="8">
+                <ReactWOW animation="fadeInUp">
+                  <div style={testimonialWrapper}>
+                <p className="quote" style={{backgroundColor: "#fff"}}>
+                <i class="fas fa-quote-left"/>
+                <em> Rose's fitness events have always been a fun way to socialize and get fit in a low pressure setting. She puts a lot of care into each event. I especially like to attend the walk/run events, the goody bags are such a sweet little touch!"</em></p>
+                <img style={testimonialPhoto} src="anita.png" alt="" />
+                <p style={author}>Anita Smith <span style={{fontWeight: "normal", fontSize: "1rem"}}> |  Participant since 2007</span></p>
+                </div>
+                </ReactWOW>
+                <ReactWOW animation="fadeInUp">
+                <a href="/EventsPage">
+                  <h4 className="buttonColors">VISIT THE SPORTY DIVA EVENTS PAGE</h4>
+                </a>
+                </ReactWOW>
+              </MDBCol>
+            </MDBRow>
+           </MDBContainer>
         </div>
     </div>
   );
