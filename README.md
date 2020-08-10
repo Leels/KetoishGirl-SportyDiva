@@ -6,6 +6,7 @@
 
 ### View
 * This site is currently under construction while Rose adapts her business plan and model to the current social climate. You can view it in it's current state [here](https://ketoish-girl-test.firebaseapp.com/).
+![landingpage](https://raw.githubusercontent.com/Leels/KetoishGirl-SportyDiva/master/public/webpage.png)
 
 
 ### Technologies Used
