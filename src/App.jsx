@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage/LandingPage';
 import EventsPage from './components/SportyDivaEvents/EventsPage';
@@ -21,21 +21,21 @@ class App extends Component {
   render() {
     return (
       <div>
-      <AuthProvider>
-      <Router history={history}>
-      <ScrollToTop>
-      <Navbar />
-      <Route exact path='/' component={LandingPage} />
-      <Route path='/adminlogin' component={AdminLogin} />
-      <PrivateRoute path='/editevent/:id' component={EditEvent} />
-      <PrivateRoute path='/createevent' component={CreateEvent} />
-      <Route path='/showevent/:id' component={ShowEvent} />
-      <Route path='/eventspage' component={EventsPage} />
-      <Route exact path='/photoupload' component={PhotoUpload} />
-      </ScrollToTop>
-      </Router>
-      <Footer />
-      </AuthProvider>
+        <AuthProvider>
+          <Router history={history}>
+            <ScrollToTop>
+              <Navbar />
+              <Route exact path='/' component={LandingPage} />
+              <Route path='/adminlogin' component={AdminLogin} />
+              <PrivateRoute path='/editevent/:id' component={EditEvent} />
+              <PrivateRoute path='/createevent' component={CreateEvent} />
+              <Route path='/showevent/:id' component={ShowEvent} />
+              <Route path='/eventspage' component={EventsPage} />
+              <Route exact path='/photoupload' component={PhotoUpload} />
+            </ScrollToTop>
+          </Router>
+          <Footer />
+        </AuthProvider>
       </div>
     );
   }

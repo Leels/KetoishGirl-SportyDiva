@@ -35,7 +35,7 @@ const lineBreak = {
     <MDBContainer fluid style={intro}>
     <MDBRow center>
         <ReactWOW animation="fadeInLeft">
-        <img style={introImage} src="./rosecoates.jpg" alt="" />
+        <img style={introImage} src="./images/rosecoates.jpg" alt="" />
         </ReactWOW>
       <MDBCol style={{display: "block"}}>
         <div style={introText}>

@@ -38,7 +38,7 @@ const questions = {
             <MDBRow>
               <MDBCol style={{backgroundColor: "white"}} size="10" md="12">
               <ReactWOW animation="fadeInUp">
-                <img style={imageStyles} src="breakfast.jpg" alt="" />
+                <img style={imageStyles} src="images/breakfast.jpg" alt="" />
               </ReactWOW>
               <ReactWOW animation="fadeInUp">
                 <p>The ketogenic diet is an extremely low-carb, high-fat diet. It involves drastically reducing carbohydrate intake and replacing it with fat. This reduction in carbs puts your body into a metabolic state called ketosis.</p>

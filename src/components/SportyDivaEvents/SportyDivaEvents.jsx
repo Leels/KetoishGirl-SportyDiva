@@ -53,7 +53,7 @@ function SportyDivaEvents(){
                 <p className="quote" style={{backgroundColor: "#fff"}}>
                 <i class="fas fa-quote-left"/>
                 <em> Rose's fitness events have always been a fun way to socialize and get fit in a low pressure setting. She puts a lot of care into each event. I especially like to attend the walk/run events, the goody bags are such a sweet little touch!"</em></p>
-                <img style={testimonialPhoto} src="anita.png" alt="" />
+                <img style={testimonialPhoto} src="images/anita.png" alt="" />
                 <p style={author}>Anita Smith <span style={{fontWeight: "normal", fontSize: "1rem"}}> |  Participant since 2007</span></p>
                 </div>
                 </ReactWOW>

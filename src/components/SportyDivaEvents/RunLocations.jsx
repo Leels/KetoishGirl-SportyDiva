@@ -25,7 +25,7 @@ class RunLocations extends Component {
           <MDBCol lg="4" md="12" className="mb-3">
           <MDBBox style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
             <MDBView hover>
-              <img src="./FoothillsTrail.jpg" className="img-fluid z-depth-1" alt="" />
+              <img src="./images/FoothillsTrail.jpg" className="img-fluid z-depth-1" alt="" />
               <MDBMask className="flex-center" overlay="black-light">
                 <p className="white-text">Orting Foothills Trail</p>
               </MDBMask>
@@ -36,7 +36,7 @@ class RunLocations extends Component {
           <MDBBox style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
             <MDBView hover>
             <div className="card cardShadow">
-            <img style={imageSize} src="./ChambersBay3.png" className="img-fluid z-depth-1" alt="" />
+            <img style={imageSize} src="./images/ChambersBay3.png" className="img-fluid z-depth-1" alt="" />
             </div>
               <MDBMask className="flex-center" overlay="black-light">
                 <p className="white-text">Chambers Bay</p>
@@ -47,7 +47,7 @@ class RunLocations extends Component {
           <MDBCol lg="4" md="12" className="mb-3">
           <MDBBox style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
             <MDBView hover>
-              <img style={imageSize} src="./FoothillsTrail2.jpeg" className="img-fluid z-depth-1" alt="" />
+              <img style={imageSize} src="./images/ChehalisTrail.jpeg" className="img-fluid z-depth-1" alt="" />
               <MDBMask className="flex-center" overlay="black-light">
                 <p className="white-text">Western Chehalis Trail</p>
               </MDBMask>

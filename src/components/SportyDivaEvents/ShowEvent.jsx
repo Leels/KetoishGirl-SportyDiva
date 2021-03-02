@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import firebase from '../../Firebase';
 import { Link } from 'react-router-dom';
-import { MDBContainer, MDBRow, MDBCard, MDBCol} from "mdbreact";
+import { MDBContainer, MDBRow, MDBCard, MDBCol } from "mdbreact";
 import { EditButton, DeleteButton } from './AdminButtons';
 
 class ShowEvent extends Component {
@@ -30,7 +30,7 @@ class ShowEvent extends Component {
     });
   }
 
-  delete(id){
+  delete(id) {
     firebase.firestore().collection('events').doc(id).delete().then(() => {
       console.log("Document successfully deleted!");
       this.props.history.push("/EventsPage")
@@ -40,7 +40,7 @@ class ShowEvent extends Component {
   }
 
   render() {
-  
+
     const back = {
       padding: "20px",
       textAlign: "center",
@@ -79,60 +79,60 @@ class ShowEvent extends Component {
       <div class="pageHeight">
         <div class="section panel panel-default">
           <div class="panel-heading">
-          <h2 style={newMargins}>SPORTY DIVA</h2>
+            <h2 style={newMargins}>SPORTY DIVA</h2>
             <h3 style={newMargins} class="panel-title">
               {this.state.event.name}
             </h3>
-        </div>
+          </div>
           <a href={this.state.event.registrationLink}>
-          <button style={center} className="btn btn-primary">Register here!</button>
+            <button style={center} className="btn btn-primary">Register here!</button>
           </a>
           <div class="panel-body">
-          <MDBRow center>
-          <MDBCol size="12" sm="6" lg="10">
-            <dl>
-          <MDBCard style={cardStyles}>
-            <div style={colorLime}>
-            <dt style={title}>DATE</dt>
-            <dd>{this.state.event.date}</dd>
-            </div>
-            <div style={colorGrey}>
-              <dt style={title}>PAY IT FORWARD MISSION</dt>
-              <dd>{this.state.event.mission}</dd>
-              </div>
-              <div style={colorLime}>
-              <dt style={title}>COURSE DESCRIPTION</dt>
-              <dd>{this.state.event.course}</dd>
-              </div>
-              <div style={colorGrey}>
-              <dt style={title}>EVENT DAY SCHEDULE</dt>
-              <dd>{this.state.event.schedule}</dd>
-              </div>
-              <div style={colorLime}>
-              <dt style={title}>TIMING</dt>
-              <dd>{this.state.event.timing}</dd>
-              </div>
-              <div style={colorGrey}>
-              <dt style={title}>LOCATION</dt>
-              <dd>{this.state.event.address}</dd>
-              </div>
-              <div style={colorLime}>
-              <dt style={title}>RESTROOMS</dt>
-              <dd>{this.state.event.restrooms}</dd>
-              </div>
-            </MDBCard>
-            </dl>
-            </MDBCol>
+            <MDBRow center>
+              <MDBCol size="12" sm="6" lg="10">
+                <dl>
+                  <MDBCard style={cardStyles}>
+                    <div style={colorLime}>
+                      <dt style={title}>DATE</dt>
+                      <dd>{this.state.event.date}</dd>
+                    </div>
+                    <div style={colorGrey}>
+                      <dt style={title}>PAY IT FORWARD MISSION</dt>
+                      <dd>{this.state.event.mission}</dd>
+                    </div>
+                    <div style={colorLime}>
+                      <dt style={title}>COURSE DESCRIPTION</dt>
+                      <dd>{this.state.event.course}</dd>
+                    </div>
+                    <div style={colorGrey}>
+                      <dt style={title}>EVENT DAY SCHEDULE</dt>
+                      <dd>{this.state.event.schedule}</dd>
+                    </div>
+                    <div style={colorLime}>
+                      <dt style={title}>TIMING</dt>
+                      <dd>{this.state.event.timing}</dd>
+                    </div>
+                    <div style={colorGrey}>
+                      <dt style={title}>LOCATION</dt>
+                      <dd>{this.state.event.address}</dd>
+                    </div>
+                    <div style={colorLime}>
+                      <dt style={title}>RESTROOMS</dt>
+                      <dd>{this.state.event.restrooms}</dd>
+                    </div>
+                  </MDBCard>
+                </dl>
+              </MDBCol>
             </MDBRow>
             <MDBContainer>
-              <MDBRow style={{marginLeft: "72px"}}>
-            <Link to={`/editevent/${this.state.key}`}>
-            <EditButton/>
-            </Link>
-            <div onClick={this.delete.bind(this, this.state.key)}>
-              <DeleteButton/>
-            </div>
-            </MDBRow>
+              <MDBRow style={{ marginLeft: "72px" }}>
+                <Link to={`/editevent/${this.state.key}`}>
+                  <EditButton />
+                </Link>
+                <div onClick={this.delete.bind(this, this.state.key)}>
+                  <DeleteButton />
+                </div>
+              </MDBRow>
             </MDBContainer>
             <h4 style={back}><Link to="/EventsPage">BACK TO EVENTS</Link></h4>
           </div>
