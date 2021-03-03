@@ -8,7 +8,7 @@ class RunLocations extends Component {
     const imageSize = {
       height: "250px",
       maxWidth: "auto",
-      // boxShadow: "0px 0px 15px #dfdfdf",
+      boxShadow: "0px 0px 15px #dfdfdf",
     }
     const subTitle = {
       textAlign: "center",
@@ -18,48 +18,48 @@ class RunLocations extends Component {
     return (
       <MDBContainer>
         <ReactWOW animation="fadeInUp">
-        <h3 style={subTitle}>WHERE WE RUN</h3>
+          <h3 style={subTitle}>WHERE WE RUN</h3>
         </ReactWOW>
         <ReactWOW animation="fadeInUp">
-        <MDBRow>
-          <MDBCol lg="4" md="12" className="mb-3">
-          <MDBBox style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
-            <MDBView hover>
-              <img src="./images/FoothillsTrail.jpg" className="img-fluid z-depth-1" alt="" />
-              <MDBMask className="flex-center" overlay="black-light">
-                <p className="white-text">Orting Foothills Trail</p>
-              </MDBMask>
-            </MDBView>
-          </MDBBox>
-          </MDBCol>
-          <MDBCol lg="4" md="12" className="mb-3">
-          <MDBBox style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
-            <MDBView hover>
-            <div className="card cardShadow">
-            <img style={imageSize} src="./images/ChambersBay3.png" className="img-fluid z-depth-1" alt="" />
-            </div>
-              <MDBMask className="flex-center" overlay="black-light">
-                <p className="white-text">Chambers Bay</p>
-              </MDBMask>
-           </MDBView>
-           </MDBBox>
-          </MDBCol>
-          <MDBCol lg="4" md="12" className="mb-3">
-          <MDBBox style={{boxShadow: "0px 0px 15px #dfdfdf"}}>
-            <MDBView hover>
-              <img style={imageSize} src="./images/ChehalisTrail.jpeg" className="img-fluid z-depth-1" alt="" />
-              <MDBMask className="flex-center" overlay="black-light">
-                <p className="white-text">Western Chehalis Trail</p>
-              </MDBMask>
-           </MDBView>
-           </MDBBox>
-          </MDBCol>
-        </MDBRow>
+          <MDBRow>
+            <MDBCol lg="4" md="12" className="mb-3">
+              <MDBBox style={{ boxShadow: "0px 0px 15px #dfdfdf" }}>
+                <MDBView hover>
+                  <img src="./images/FoothillsTrail.jpg" className="img-fluid z-depth-1" alt="" />
+                  <MDBMask className="flex-center" overlay="black-light">
+                    <p className="white-text">Orting Foothills Trail</p>
+                  </MDBMask>
+                </MDBView>
+              </MDBBox>
+            </MDBCol>
+            <MDBCol lg="4" md="12" className="mb-3">
+              <MDBBox style={{ boxShadow: "0px 0px 15px #dfdfdf" }}>
+                <MDBView hover>
+                  <div className="card cardShadow">
+                    <img style={imageSize} src="./images/ChambersBay3.png" className="img-fluid z-depth-1" alt="" />
+                  </div>
+                  <MDBMask className="flex-center" overlay="black-light">
+                    <p className="white-text">Chambers Bay</p>
+                  </MDBMask>
+                </MDBView>
+              </MDBBox>
+            </MDBCol>
+            <MDBCol lg="4" md="12" className="mb-3">
+              <MDBBox style={{ boxShadow: "0px 0px 15px #dfdfdf" }}>
+                <MDBView hover>
+                  <img style={imageSize} src="./images/ChehalisTrail.jpeg" className="img-fluid z-depth-1" alt="" />
+                  <MDBMask className="flex-center" overlay="black-light">
+                    <p className="white-text">Western Chehalis Trail</p>
+                  </MDBMask>
+                </MDBView>
+              </MDBBox>
+            </MDBCol>
+          </MDBRow>
         </ReactWOW>
         <ReactWOW animation="fadeInUp">
-        <p style={{padding: '20px 0 40px 0'}}>All Sporty Diva Run/Walk Events are located throughout the beautiful Puget Sound. You can run towards Mt.Rainier on the Orting Foothills Trail, breathe in the salty fresh sea air at Chambers Bay or follow the ducks around Seattle's Greenlake Park.</p>
+          <p style={{ padding: '20px 0 40px 0' }}>All Sporty Diva Run/Walk Events are located throughout the beautiful Puget Sound. You can run towards Mt.Rainier on the Orting Foothills Trail, breathe in the salty fresh sea air at Chambers Bay or follow the ducks around Seattle's Greenlake Park.</p>
         </ReactWOW>
-    </MDBContainer>
+      </MDBContainer>
     );
   }
 }

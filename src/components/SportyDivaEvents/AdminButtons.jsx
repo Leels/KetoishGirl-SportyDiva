@@ -5,15 +5,15 @@ const buttonWidth = {
   width: "175px"
 }
 
-export function EditButton(){
+export function EditButton() {
 
-  const {currentUser} = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
 
   if (currentUser) {
-  return  (
-    <div>
-      <button style={buttonWidth} className="btn btn-success">Edit</button>
-    </div>
+    return (
+      <div>
+        <button style={buttonWidth} className="btn btn-success">Edit</button>
+      </div>
     );
   };
   return (
@@ -21,20 +21,19 @@ export function EditButton(){
   );
 };
 
-export function DeleteButton(){
+export function DeleteButton() {
 
-    const {currentUser} = useContext(AuthContext);
-  
-    if (currentUser) {
-    return  (
+  const { currentUser } = useContext(AuthContext);
+
+  if (currentUser) {
+    return (
       <div>
         <button style={buttonWidth} className="btn btn-danger">Delete</button>
       </div>
-      );
-    };
-    return (
-      null
     );
   };
-  
-  
+  return (
+    null
+  );
+};
+

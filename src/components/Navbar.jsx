@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useHistory } from "react-router-dom";
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBIcon } from "mdbreact";
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavbarToggler, MDBCollapse, MDBIcon } from "mdbreact";
 
 const Navbar = () => {
 // state = {

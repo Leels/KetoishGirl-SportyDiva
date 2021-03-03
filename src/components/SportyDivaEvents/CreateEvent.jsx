@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
 import firebase from '../../Firebase';
 import { Link } from 'react-router-dom';
-import { MDBContainer, MDBRow, MDBCard, MDBCol} from "mdbreact";
 
 class CreateEvent extends Component {
 
@@ -56,9 +54,9 @@ class CreateEvent extends Component {
       });
       this.props.history.push("/EventsPage")
     })
-    .catch((error) => {
-      console.error("Error adding event: ", error);
-    });
+      .catch((error) => {
+        console.error("Error adding event: ", error);
+      });
   }
 
   render() {

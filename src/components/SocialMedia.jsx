@@ -1,6 +1,6 @@
 import React from "react";
 import ReactWOW from 'react-wow';
-import { MDBCard, MDBRow, MDBView, MDBMask, MDBCol, } from "mdbreact";
+import { MDBRow, MDBCol, } from "mdbreact";
 
 function ScheduleAppointment() {
 

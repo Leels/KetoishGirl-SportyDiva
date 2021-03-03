@@ -12,7 +12,6 @@ import "./App.css"
 import AuthProvider from './Auth';
 import PrivateRoute from './components/PrivateRoute';
 import ScrollToTop from './components/ScrollToTop';
-// import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Router, Route } from 'react-router-dom';
 import history from './history';
 

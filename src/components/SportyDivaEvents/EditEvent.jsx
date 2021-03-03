@@ -44,7 +44,7 @@ class EditEvent extends Component {
   onChange = (e) => {
     const state = this.state
     state[e.target.name] = e.target.value;
-    this.setState({event:state});
+    this.setState({ event: state });
   }
 
   onSubmit = (e) => {
@@ -74,11 +74,11 @@ class EditEvent extends Component {
         address: '',
         restrooms: '',
       });
-      this.props.history.push("/ShowEvent/"+this.props.match.params.id)
+      this.props.history.push("/ShowEvent/" + this.props.match.params.id)
     })
-    .catch((error) => {
-      console.error("Error adding event: ", error);
-    });
+      .catch((error) => {
+        console.error("Error adding event: ", error);
+      });
   }
 
   render() {
@@ -87,7 +87,7 @@ class EditEvent extends Component {
       padding: "20px",
       textAlign: "center",
     }
-    
+
     return (
       <div class="pageHeight">
         <div class="section panel panel-default">
@@ -100,35 +100,35 @@ class EditEvent extends Component {
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
                 <label for="name">Sporty Diva Run:</label>
-                <input type="text" class="form-control" name="name" value={this.state.name} onChange={this.onChange}/>
+                <input type="text" class="form-control" name="name" value={this.state.name} onChange={this.onChange} />
               </div>
               <div class="form-group">
                 <label for="date">Date:</label>
-                <input type="text" class="form-control" name="date" value={this.state.date} onChange={this.onChange}/>
+                <input type="text" class="form-control" name="date" value={this.state.date} onChange={this.onChange} />
               </div>
               <div class="form-group">
                 <label for="mission">Pay it Forward Mission:</label>
-                <input type="text" class="form-control" name="mission" value={this.state.mission} onChange={this.onChange}/>
+                <input type="text" class="form-control" name="mission" value={this.state.mission} onChange={this.onChange} />
               </div>
               <div class="form-group">
                 <label for="course">Course Description:</label>
-                <input type="text" class="form-control" name="course" value={this.state.course} onChange={this.onChange}/>
+                <input type="text" class="form-control" name="course" value={this.state.course} onChange={this.onChange} />
               </div>
               <div class="form-group">
                 <label for="schedule">Event Day Schedule:</label>
-                <input type="text" class="form-control" name="schedule" value={this.state.schedule} onChange={this.onChange}/>
+                <input type="text" class="form-control" name="schedule" value={this.state.schedule} onChange={this.onChange} />
               </div>
               <div class="form-group">
                 <label for="timing">Timing:</label>
-                <input type="text" class="form-control" name="timing" value={this.state.timing} onChange={this.onChange}/>
+                <input type="text" class="form-control" name="timing" value={this.state.timing} onChange={this.onChange} />
               </div>
               <div class="form-group">
                 <label for="address">Location:</label>
-                <input type="text" class="form-control" name="address" value={this.state.address} onChange={this.onChange}/>
+                <input type="text" class="form-control" name="address" value={this.state.address} onChange={this.onChange} />
               </div>
               <div class="form-group">
                 <label for="restrooms">Restrooms:</label>
-                <input type="text" class="form-control" name="restrooms" value={this.state.restrooms} onChange={this.onChange}/>
+                <input type="text" class="form-control" name="restrooms" value={this.state.restrooms} onChange={this.onChange} />
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
               <h4 style={back}><Link to="/EventsPage">BACK TO EVENTS</Link></h4>

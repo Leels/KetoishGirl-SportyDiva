@@ -21,7 +21,7 @@ class EventList extends Component {
       const { name, date, mission, course, schedule, timing, address, restrooms, registrationLink } = doc.data();
       events.push({
         key: doc.id,
-        doc, // DocumentSnapshot
+        doc,
         name,
         date,
         mission,
@@ -35,7 +35,7 @@ class EventList extends Component {
     });
     this.setState({
       events
-   });
+    });
   }
 
   componentDidMount() {
@@ -61,33 +61,33 @@ class EventList extends Component {
           </h3>
         </ReactWOW>
         <ReactWOW animation="fadeInUp">
-        <div >
-          <div className="panel-body title">
-            <table style={{boxShadow: "0px 0px 15px #dfdfdf"}} className="table list table-stripe">
-            <ReactWOW animation="fadeInUp">
-              <thead>
-                <tr>
-                  <th style={tableHeaders}>Event</th>
-                  <th style={tableHeaders}>Mission</th>
-                  <th style={tableHeaders}>Date</th>
-                  <th style={tableHeaders}>Location</th>
-                </tr>
-              </thead>
-              </ReactWOW>
-              <tbody>
-                {this.state.events.map((event, i) =>
-                  <tr key={i}>
-                    <td><Link to={`/showevent/${event.key}`} style={underline}>{event.name}</Link></td>
-                    <td>{event.mission}</td>
-                    <td>{event.date}</td>
-                    <td>{event.address}</td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
-            <AddEventAccess/>
+          <div >
+            <div className="panel-body title">
+              <table style={{ boxShadow: "0px 0px 15px #dfdfdf" }} className="table list table-stripe">
+                <ReactWOW animation="fadeInUp">
+                  <thead>
+                    <tr>
+                      <th style={tableHeaders}>Event</th>
+                      <th style={tableHeaders}>Mission</th>
+                      <th style={tableHeaders}>Date</th>
+                      <th style={tableHeaders}>Location</th>
+                    </tr>
+                  </thead>
+                </ReactWOW>
+                <tbody>
+                  {this.state.events.map((event, i) =>
+                    <tr key={i}>
+                      <td><Link to={`/showevent/${event.key}`} style={underline}>{event.name}</Link></td>
+                      <td>{event.mission}</td>
+                      <td>{event.date}</td>
+                      <td>{event.address}</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+              <AddEventAccess />
+            </div>
           </div>
-        </div>
         </ReactWOW>
       </div>
     );

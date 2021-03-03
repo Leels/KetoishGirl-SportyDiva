@@ -1,7 +1,7 @@
 import React, { useCallback, useContext } from "react";
 import { withRouter, Redirect } from "react-router";
 import app from "../../Firebase.js";
-import {AuthContext}  from "../../Auth.js";
+import { AuthContext } from "../../Auth.js";
 
 const AdminLogin = ({ history }) => {
   const { currentUser } = useContext(AuthContext);
@@ -32,16 +32,16 @@ const AdminLogin = ({ history }) => {
           <h2 className="panel-title">
             ADMIN LOGIN</h2>
         </div>
-        <br/>
+        <br />
         <div className="panel-body">
           <form onSubmit={handleLogin}>
             <div className="form-group">
               <label for="email">Email</label>
-              <input type="text" className="form-control" name="email" placeholder="example@example.com"/>
+              <input type="text" className="form-control" name="email" placeholder="example@example.com" />
             </div>
             <div className="form-group">
               <label for="password">Password</label>
-              <input type="password" className="form-control" name="password" placeholder="********"/>
+              <input type="password" className="form-control" name="password" placeholder="********" />
             </div>
             <button type="submit" className="btn btn-success">Login</button>
           </form>

@@ -4,25 +4,25 @@ import { AuthContext } from "../Auth";
 
 
 
-function LoginButton(){
+function LoginButton() {
 
-  const {currentUser} = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
 
   if (currentUser) {
-  return  (
-    <div>
-    <a onClick={() => app.auth().signOut()}>
-    <i class="fas fa-heart"></i>
-    </a>
-    </div>
-  );
+    return (
+      <div>
+        <a onClick={() => app.auth().signOut()}>
+          <i class="fas fa-heart"></i>
+        </a>
+      </div>
+    );
   }
   return (
     <div >
-    <a href="./AdminLogin">
-    <i class="far fa-heart"/>
-    </a>
-  </div>
+      <a href="./AdminLogin">
+        <i class="far fa-heart" />
+      </a>
+    </div>
   );
 }
 

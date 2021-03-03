@@ -1,6 +1,6 @@
 import React from "react";
 import ReactWOW from 'react-wow';
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBRow } from "mdbreact";
 
 
 
