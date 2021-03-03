@@ -1,8 +1,6 @@
 import * as firebase from 'firebase';
-// import firestore from 'firebase/firestore'
 import 'firebase/storage';
 import 'firebase/database';
-
 
 const config = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
